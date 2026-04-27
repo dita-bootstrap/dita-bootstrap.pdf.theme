@@ -1,6 +1,6 @@
 # DITA Bootstrap PDF Themes
 
-A plug-in for [DITA Open Toolkit][1] that provides a collection of Bootswatch-inspired themes for the [DITA Bootstrap PDF plug-in][3].
+A plug-in for [DITA Open Toolkit][1] that provides a collection of Bootswatch-inspired themes for the [DITA Bootstrap PDF plug-in][2].
 
 - [Installing](#installing)
 - [Using](#using)
@@ -14,8 +14,8 @@ Use the `dita` command to add this plug-in and its requirements to your DITA Ope
 
 ```console
 dita install dita-bootstrap.specialization
-dita install https://github.com/dita-bootstrap/dita-bootstrap.pdf/archive/develop.zip
-dita install https://github.com/dita-bootstrap/dita-bootstrap.pdf.theme/archive/develop.zip
+dita install org.dita-bootstrap.dita-bootstrap.pdf
+dita install org.dita-bootstrap/dita-bootstrap.pdf.theme
 ```
 
 ## Using
@@ -73,5 +73,4 @@ The generated PDFs created by this software include the following additional fon
 - Ubuntu – https://design.ubuntu.com/font/ – **Ubuntu Font License**
 
 [1]: http://www.dita-ot.org
-[2]: https://github.com/dita-bootstrap/dita-bootstrap.html
-[3]: https://github.com/dita-bootstrap/dita-bootstrap.pdf
+[2]: https://github.com/dita-bootstrap/dita-bootstrap.pdf
