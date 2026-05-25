@@ -115,4 +115,8 @@
   <xsl:variable name="bootstrap-h5-font-size">15pt</xsl:variable>
   <xsl:variable name="bootstrap-h6-font-size">12pt</xsl:variable>
 
+
+  <!-- Code colors -->
+  <xsl:variable name="bootstrap-code-color">#e83283</xsl:variable>
+  <xsl:variable name="bootstrap-dita-violet">#686dc3</xsl:variable>
 </xsl:stylesheet>
