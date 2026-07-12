@@ -15,10 +15,10 @@ jobs:
         theme: [cerulean, cosmo, cyborg, darkly, flatly, journal]
     steps:
       - name: Git checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Git checkout specialization
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: dita-bootstrap/dita-bootstrap.specialization
           ref: develop
