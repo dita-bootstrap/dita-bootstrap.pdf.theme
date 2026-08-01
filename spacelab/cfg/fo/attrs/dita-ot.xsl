@@ -71,9 +71,9 @@
     <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-badge-light-bg"/></xsl:attribute>
     <xsl:attribute name="color"><xsl:value-of select="$bootstrap-badge-light-color"/></xsl:attribute>
   </xsl:attribute-set>
-  <xsl:attribute-set name="__table__dark">
-    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-badge-dark-bg"/></xsl:attribute>
-    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-badge-dark-color"/></xsl:attribute>
+  <xsl:attribute-set name="__table__inverse">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-badge-inverse-bg"/></xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-badge-inverse-color"/></xsl:attribute>
   </xsl:attribute-set>
 
   <!-- Background Subtle Variants with Text Black -->
@@ -105,8 +105,8 @@
     <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-light-subtle"/></xsl:attribute>
     <xsl:attribute name="color">#000000</xsl:attribute>
   </xsl:attribute-set>
-  <xsl:attribute-set name="__bg__dark-subtle">
-    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-dark-subtle"/></xsl:attribute>
+  <xsl:attribute-set name="__bg__inverse-subtle">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-inverse-subtle"/></xsl:attribute>
     <xsl:attribute name="color">#000000</xsl:attribute>
   </xsl:attribute-set>
 

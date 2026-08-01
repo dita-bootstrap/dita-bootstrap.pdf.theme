@@ -97,17 +97,17 @@
   <xsl:variable name="bootstrap-table-light-bg">#f6f6f6</xsl:variable>
   <xsl:variable name="bootstrap-table-light-color">#222</xsl:variable>
 
-  <!-- Dark -->
-  <xsl:variable name="bootstrap-dark">#555555</xsl:variable>
-  <xsl:variable name="bootstrap-badge-dark-bg" select="$bootstrap-dark"/>
-  <xsl:variable name="bootstrap-badge-dark-color">#fff</xsl:variable>
-  <xsl:variable name="bootstrap-btn-dark-bg">#555</xsl:variable>
-  <xsl:variable name="bootstrap-btn-dark-color">#fff</xsl:variable>
-  <xsl:variable name="bootstrap-dark-subtle">#555555</xsl:variable>
-  <xsl:variable name="bootstrap-dark-alert-border">#4d4d4d</xsl:variable>
-  <xsl:variable name="bootstrap-dark-subtle-text">#ffffff</xsl:variable>
-  <xsl:variable name="bootstrap-table-dark-bg">#555</xsl:variable>
-  <xsl:variable name="bootstrap-table-dark-color">#fff</xsl:variable>
+  <!-- Inverse -->
+  <xsl:variable name="bootstrap-inverse">#555555</xsl:variable>
+  <xsl:variable name="bootstrap-badge-inverse-bg" select="$bootstrap-inverse"/>
+  <xsl:variable name="bootstrap-badge-inverse-color">#fff</xsl:variable>
+  <xsl:variable name="bootstrap-btn-inverse-bg">#555</xsl:variable>
+  <xsl:variable name="bootstrap-btn-inverse-color">#fff</xsl:variable>
+  <xsl:variable name="bootstrap-inverse-subtle">#555555</xsl:variable>
+  <xsl:variable name="bootstrap-inverse-alert-border">#4d4d4d</xsl:variable>
+  <xsl:variable name="bootstrap-inverse-subtle-text">#ffffff</xsl:variable>
+  <xsl:variable name="bootstrap-table-inverse-bg">#555</xsl:variable>
+  <xsl:variable name="bootstrap-table-inverse-color">#fff</xsl:variable>
   <xsl:variable name="bootstrap-body-bg">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-body-color">#222222</xsl:variable>
   <xsl:variable name="bootstrap-border-color">#dee2e6</xsl:variable>

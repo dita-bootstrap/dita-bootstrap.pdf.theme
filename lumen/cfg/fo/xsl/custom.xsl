@@ -68,7 +68,7 @@
         <xsl:when test="contains(@outputclass, 'alert-warning')">warning</xsl:when>
         <xsl:when test="contains(@outputclass, 'alert-danger')">danger</xsl:when>
         <xsl:when test="contains(@outputclass, 'alert-light')">light</xsl:when>
-        <xsl:when test="contains(@outputclass, 'alert-dark')">dark</xsl:when>
+        <xsl:when test="contains(@outputclass, 'alert-inverse')">inverse</xsl:when>
         <xsl:otherwise>secondary</xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
@@ -84,7 +84,7 @@
         <xsl:when test="$theme-color = 'warning'"><xsl:value-of select="$bootstrap-warning-alert-border"/></xsl:when>
         <xsl:when test="$theme-color = 'danger'"><xsl:value-of select="$bootstrap-danger-alert-border"/></xsl:when>
         <xsl:when test="$theme-color = 'light'"><xsl:value-of select="$bootstrap-light-alert-border"/></xsl:when>
-        <xsl:when test="$theme-color = 'dark'"><xsl:value-of select="$bootstrap-dark-alert-border"/></xsl:when>
+        <xsl:when test="$theme-color = 'inverse'"><xsl:value-of select="$bootstrap-inverse-alert-border"/></xsl:when>
         <xsl:otherwise><xsl:value-of select="$bootstrap-secondary-alert-border"/></xsl:otherwise>
       </xsl:choose>
     </xsl:variable>

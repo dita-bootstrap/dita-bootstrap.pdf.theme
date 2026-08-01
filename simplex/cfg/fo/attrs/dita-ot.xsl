@@ -82,8 +82,8 @@
     <xsl:attribute name="color"><xsl:value-of select="$bootstrap-badge-danger-color"/></xsl:attribute>
   </xsl:attribute-set>
 
-  <xsl:attribute-set name="__table__dark">
-    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-badge-dark-bg"/></xsl:attribute>
-    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-badge-dark-color"/></xsl:attribute>
+  <xsl:attribute-set name="__table__inverse">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-badge-inverse-bg"/></xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-badge-inverse-color"/></xsl:attribute>
   </xsl:attribute-set>
 </xsl:stylesheet>
