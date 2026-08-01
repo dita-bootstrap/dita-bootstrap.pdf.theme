@@ -52,9 +52,9 @@
     <xsl:attribute name="color"><xsl:value-of select="$bootstrap-badge-primary-color"/></xsl:attribute>
   </xsl:attribute-set>
 
-  <xsl:attribute-set name="__table__light">
-    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-badge-light-bg"/></xsl:attribute>
-    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-badge-light-color"/></xsl:attribute>
+  <xsl:attribute-set name="__table__accent">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-badge-accent-bg"/></xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-badge-accent-color"/></xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="__table__secondary">

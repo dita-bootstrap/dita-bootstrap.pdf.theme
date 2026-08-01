@@ -161,9 +161,9 @@
     <xsl:attribute name="color"><xsl:value-of select="$bootstrap-table-primary-color"/></xsl:attribute>
   </xsl:attribute-set>
 
-  <xsl:attribute-set name="__table__light">
-    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-table-light-bg"/></xsl:attribute>
-    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-table-light-color"/></xsl:attribute>
+  <xsl:attribute-set name="__table__accent">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-table-accent-bg"/></xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-table-accent-color"/></xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="__table__secondary">

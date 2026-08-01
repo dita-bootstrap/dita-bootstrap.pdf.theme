@@ -79,17 +79,16 @@
   <xsl:variable name="bootstrap-table-danger-bg">#f5cccc</xsl:variable>
   <xsl:variable name="bootstrap-table-danger-color">#777</xsl:variable>
 
-  <!-- Light -->
-  <xsl:variable name="bootstrap-light">#eeeeee</xsl:variable>
-  <xsl:variable name="bootstrap-badge-light-bg" select="$bootstrap-light"/>
-  <xsl:variable name="bootstrap-badge-light-color">#000</xsl:variable>
-  <xsl:variable name="bootstrap-btn-light-bg">#eee</xsl:variable>
-  <xsl:variable name="bootstrap-btn-light-color">#000</xsl:variable>
-  <xsl:variable name="bootstrap-light-subtle">#fefefe</xsl:variable>
-  <xsl:variable name="bootstrap-light-subtle-text">#141619</xsl:variable>
-  <xsl:variable name="bootstrap-table-light-bg">#eee</xsl:variable>
-  <xsl:variable name="bootstrap-table-light-color">#777</xsl:variable>
-
+  <!-- Accent -->
+  <xsl:variable name="bootstrap-accent">#cd389b</xsl:variable>
+  <xsl:variable name="bootstrap-badge-accent-bg" select="$bootstrap-accent"/>
+  <xsl:variable name="bootstrap-badge-accent-color">#fff</xsl:variable>
+  <xsl:variable name="bootstrap-btn-accent-bg" select="$bootstrap-accent"/>
+  <xsl:variable name="bootstrap-btn-accent-color">#fff</xsl:variable>
+  <xsl:variable name="bootstrap-accent-subtle">#f5d7eb</xsl:variable>
+    <xsl:variable name="bootstrap-accent-subtle-text">#52163e</xsl:variable>
+  <xsl:variable name="bootstrap-table-accent-bg" select="$bootstrap-accent-subtle"/>
+  <xsl:variable name="bootstrap-table-accent-color">#222</xsl:variable>
   <!-- Inverse -->
   <xsl:variable name="bootstrap-inverse">#333333</xsl:variable>
   <xsl:variable name="bootstrap-badge-inverse-bg" select="$bootstrap-inverse"/>

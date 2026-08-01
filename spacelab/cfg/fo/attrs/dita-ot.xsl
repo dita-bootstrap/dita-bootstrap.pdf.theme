@@ -67,9 +67,9 @@
     <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-badge-danger-bg"/></xsl:attribute>
     <xsl:attribute name="color"><xsl:value-of select="$bootstrap-badge-danger-color"/></xsl:attribute>
   </xsl:attribute-set>
-  <xsl:attribute-set name="__table__light">
-    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-badge-light-bg"/></xsl:attribute>
-    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-badge-light-color"/></xsl:attribute>
+  <xsl:attribute-set name="__table__accent">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-badge-accent-bg"/></xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-badge-accent-color"/></xsl:attribute>
   </xsl:attribute-set>
   <xsl:attribute-set name="__table__inverse">
     <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-badge-inverse-bg"/></xsl:attribute>
@@ -101,8 +101,8 @@
     <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-danger-subtle"/></xsl:attribute>
     <xsl:attribute name="color">#000000</xsl:attribute>
   </xsl:attribute-set>
-  <xsl:attribute-set name="__bg__light-subtle">
-    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-light-subtle"/></xsl:attribute>
+  <xsl:attribute-set name="__bg__accent-subtle">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-accent-subtle"/></xsl:attribute>
     <xsl:attribute name="color">#000000</xsl:attribute>
   </xsl:attribute-set>
   <xsl:attribute-set name="__bg__inverse-subtle">
