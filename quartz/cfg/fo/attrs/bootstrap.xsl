@@ -25,7 +25,7 @@
   <xsl:variable name="bootstrap-table-primary-color">#fff</xsl:variable>
 
   <!-- Secondary -->
-  <xsl:variable name="bootstrap-secondary">#dddddd</xsl:variable>
+  <xsl:variable name="bootstrap-secondary">#514f57</xsl:variable>
   <xsl:variable name="bootstrap-badge-secondary-bg" select="$bootstrap-secondary"/>
   <xsl:variable name="bootstrap-badge-secondary-color">#000</xsl:variable>
   <xsl:variable name="bootstrap-btn-secondary-bg">rgba(255, 255, 255, 0.4)</xsl:variable>
