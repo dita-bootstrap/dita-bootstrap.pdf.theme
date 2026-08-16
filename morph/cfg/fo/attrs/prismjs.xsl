@@ -11,12 +11,12 @@
   <xsl:variable name="prismjs.comment.color">#92a0c6</xsl:variable>
   <xsl:variable name="prismjs.punctuation.color">#92a0c6</xsl:variable>
   <xsl:variable name="prismjs.namespace.color">#92a0c6</xsl:variable>
-  <xsl:variable name="prismjs.tag.color">#d63384</xsl:variable>
-  <xsl:variable name="prismjs.string.color">#43cc29</xsl:variable>
-  <xsl:variable name="prismjs.keyword.color">#378dfc</xsl:variable>
-  <xsl:variable name="prismjs.type.color">#e52527</xsl:variable>
-  <xsl:variable name="prismjs.regex.color">#fd7e14</xsl:variable>
-  <xsl:variable name="prismjs.deleted.color">#e52527</xsl:variable>
-  <xsl:variable name="prismjs.url.color">#ffc107</xsl:variable>
+  <xsl:variable name="prismjs.tag.color">#b42b6f</xsl:variable>
+  <xsl:variable name="prismjs.string.color">#38ab22</xsl:variable>
+  <xsl:variable name="prismjs.keyword.color">#2e76d4</xsl:variable>
+  <xsl:variable name="prismjs.type.color">#c01f21</xsl:variable>
+  <xsl:variable name="prismjs.regex.color">#d56a11</xsl:variable>
+  <xsl:variable name="prismjs.deleted.color">#c01f21</xsl:variable>
+  <xsl:variable name="prismjs.url.color">#d6a206</xsl:variable>
 
 </xsl:stylesheet>
