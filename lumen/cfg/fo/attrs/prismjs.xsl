@@ -19,4 +19,6 @@
   <xsl:variable name="prismjs.deleted.color">#d6372d</xsl:variable>
   <xsl:variable name="prismjs.url.color">#d67017</xsl:variable>
 
+  <xsl:variable name="prismjs.font-weight">normal</xsl:variable>
+
 </xsl:stylesheet>
