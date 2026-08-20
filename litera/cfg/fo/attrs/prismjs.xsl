@@ -7,7 +7,6 @@
 
   <!-- PrismJS code block styling aligned with Litera variables -->
   <xsl:variable name="prismjs.text.color">#343a40</xsl:variable>
-  <xsl:variable name="prismjs.background.color">#f3f4f5</xsl:variable>
   <xsl:variable name="prismjs.comment.color">#64686d</xsl:variable>
   <xsl:variable name="prismjs.punctuation.color">#64686d</xsl:variable>
   <xsl:variable name="prismjs.namespace.color">#64686d</xsl:variable>

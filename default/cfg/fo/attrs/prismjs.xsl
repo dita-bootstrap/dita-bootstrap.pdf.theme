@@ -7,7 +7,6 @@
 
   <!-- PrismJS code block styling aligned with default Bootstrap v6 variables -->
   <xsl:variable name="prismjs.text.color">#2b2f32</xsl:variable>
-  <xsl:variable name="prismjs.background.color">#f7f8f8</xsl:variable>
   <xsl:variable name="prismjs.comment.color">#5e6164</xsl:variable>
   <xsl:variable name="prismjs.punctuation.color">#5e6164</xsl:variable>
   <xsl:variable name="prismjs.namespace.color">#5e6164</xsl:variable>

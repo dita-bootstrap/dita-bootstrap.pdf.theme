@@ -7,7 +7,6 @@
 
   <!-- PrismJS code block styling aligned with Quartz variables -->
   <xsl:variable name="prismjs.text.color">#ffffff</xsl:variable>
-  <xsl:variable name="prismjs.background.color">#696eb8</xsl:variable>
   <xsl:variable name="prismjs.comment.color">#dadbed</xsl:variable>
   <xsl:variable name="prismjs.punctuation.color">#dadbed</xsl:variable>
   <xsl:variable name="prismjs.namespace.color">#dadbed</xsl:variable>

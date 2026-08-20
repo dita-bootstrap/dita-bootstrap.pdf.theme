@@ -15,7 +15,7 @@
       
       <xsl:variable
         name="theme"
-        select="(@color, parent::*/@color, ancestor::*[contains(@class, ' topic/table ')][1]/@color)[1]"
+        select="(@theme, parent::*/@theme, ancestor::*[contains(@class, ' topic/table ')][1]/@theme)[1]"
       />
       
       <xsl:if test="$theme">
@@ -34,9 +34,9 @@
     <fo:table-row xsl:use-attribute-sets="tbody.row">
       <xsl:call-template name="commonattributes"/>
 
-      <xsl:variable name="rowTheme" select="@color"/>
+      <xsl:variable name="rowTheme" select="@theme"/>
       <xsl:variable name="table" select="ancestor::*[contains(@class, ' topic/table ')][1]"/>
-      <xsl:variable name="tableTheme" select="$table/@color"/>
+      <xsl:variable name="tableTheme" select="$table/@theme"/>
       <xsl:variable name="striped" select="$table/@striped = 'yes'"/>
       
       <xsl:variable name="rowIndex" select="count(preceding-sibling::*[contains(@class, ' topic/row ')]) + 1"/>
@@ -81,7 +81,7 @@
       select="parent::*[contains(@class, ' topic/row ')]/parent::*[contains(@class, ' topic/tfoot ')]"
     />
     <xsl:variable name="table" select="ancestor::*[contains(@class, ' topic/table ')][1]"/>
-    <xsl:variable name="tableTheme" select="$table/@color"/>
+    <xsl:variable name="tableTheme" select="$table/@theme"/>
     <xsl:variable name="stripedCols" select="$table/@striped-columns = 'yes'"/>
     
     <xsl:variable name="colIndex" select="if (@dita-ot:x) then xs:integer(@dita-ot:x) else 0"/>
@@ -144,9 +144,9 @@
       
       <!-- Cell-level themed color or striping - UNITED: USE SUBTLE -->
       <xsl:choose>
-        <xsl:when test="@color">
+        <xsl:when test="@theme">
            <xsl:call-template name="processBootstrapAttrSetReflection">
-             <xsl:with-param name="attrSet" select="concat('__bg__', @color, '-subtle')"/>
+             <xsl:with-param name="attrSet" select="concat('__bg__', @theme, '-subtle')"/>
            </xsl:call-template>
         </xsl:when>
         <xsl:when test="$isColoredCol">

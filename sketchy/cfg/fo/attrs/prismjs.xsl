@@ -7,7 +7,6 @@
 
   <!-- PrismJS code block styling aligned with Sketchy variables -->
   <xsl:variable name="prismjs.text.color">#212529</xsl:variable>
-  <xsl:variable name="prismjs.background.color">#e6e6e6</xsl:variable>
   <xsl:variable name="prismjs.comment.color">#525558</xsl:variable>
   <xsl:variable name="prismjs.punctuation.color">#525558</xsl:variable>
   <xsl:variable name="prismjs.namespace.color">#525558</xsl:variable>

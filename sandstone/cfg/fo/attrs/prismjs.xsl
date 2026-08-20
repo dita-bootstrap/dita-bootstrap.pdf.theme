@@ -7,7 +7,6 @@
 
   <!-- PrismJS code block styling aligned with Sandstone variables -->
   <xsl:variable name="prismjs.text.color">#3e3f3a</xsl:variable>
-  <xsl:variable name="prismjs.background.color">#eeeeed</xsl:variable>
   <xsl:variable name="prismjs.comment.color">#6a6b67</xsl:variable>
   <xsl:variable name="prismjs.punctuation.color">#6a6b67</xsl:variable>
   <xsl:variable name="prismjs.namespace.color">#6a6b67</xsl:variable>

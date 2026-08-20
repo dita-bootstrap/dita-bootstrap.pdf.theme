@@ -7,7 +7,6 @@
 
   <!-- PrismJS code block styling aligned with Lux variables -->
   <xsl:variable name="prismjs.text.color">#55595c</xsl:variable>
-  <xsl:variable name="prismjs.background.color">#ffffff</xsl:variable>
   <xsl:variable name="prismjs.comment.color">#808285</xsl:variable>
   <xsl:variable name="prismjs.punctuation.color">#808285</xsl:variable>
   <xsl:variable name="prismjs.namespace.color">#808285</xsl:variable>

@@ -7,7 +7,6 @@
 
   <!-- PrismJS code block styling aligned with Cerulean variables -->
   <xsl:variable name="prismjs.text.color">#495057</xsl:variable>
-  <xsl:variable name="prismjs.background.color">#fcfcfd</xsl:variable>
   <xsl:variable name="prismjs.comment.color">#767b80</xsl:variable>
   <xsl:variable name="prismjs.punctuation.color">#767b80</xsl:variable>
   <xsl:variable name="prismjs.namespace.color">#767b80</xsl:variable>

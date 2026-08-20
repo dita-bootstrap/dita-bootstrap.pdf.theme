@@ -13,7 +13,6 @@
   
   <xsl:template match="*" mode="prismDecoration" priority="10">
     <xsl:attribute name="color"><xsl:value-of select="$prismjs.text.color"/></xsl:attribute>
-    <xsl:attribute name="background-color"><xsl:value-of select="$prismjs.background.color"/></xsl:attribute>
     <xsl:attribute name="border-style">solid</xsl:attribute>
     <xsl:attribute name="border-color">#000000</xsl:attribute>
     <xsl:attribute name="border-width"><xsl:value-of select="$bootstrap-border-width"/></xsl:attribute>
@@ -57,7 +56,6 @@
     <xsl:variable name="token" select="tokenize(@outputclass, ' ')[starts-with(., 'btn-')][1]"/>
     <xsl:variable name="theme">
       <xsl:choose>
-        <xsl:when test="@color"><xsl:value-of select="@color"/></xsl:when>
         <xsl:when test="starts-with($token, 'btn-outline-')">
           <xsl:value-of select="substring-after($token, 'btn-outline-')"/>
         </xsl:when>

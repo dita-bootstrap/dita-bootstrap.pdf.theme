@@ -7,7 +7,6 @@
 
   <!-- PrismJS code block styling aligned with Superhero variables -->
   <xsl:variable name="prismjs.text.color">#ebebeb</xsl:variable>
-  <xsl:variable name="prismjs.background.color">#182d3f</xsl:variable>
   <xsl:variable name="prismjs.comment.color">#b6bcc0</xsl:variable>
   <xsl:variable name="prismjs.punctuation.color">#b6bcc0</xsl:variable>
   <xsl:variable name="prismjs.namespace.color">#b6bcc0</xsl:variable>

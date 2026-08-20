@@ -7,7 +7,6 @@
 
   <!-- PrismJS code block styling aligned with Flatly variables -->
   <xsl:variable name="prismjs.text.color">#212529</xsl:variable>
-  <xsl:variable name="prismjs.background.color">#eff2f2</xsl:variable>
   <xsl:variable name="prismjs.comment.color">#54585b</xsl:variable>
   <xsl:variable name="prismjs.punctuation.color">#54585b</xsl:variable>
   <xsl:variable name="prismjs.namespace.color">#54585b</xsl:variable>

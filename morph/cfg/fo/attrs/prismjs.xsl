@@ -7,7 +7,6 @@
 
   <!-- PrismJS code block styling aligned with Morph variables -->
   <xsl:variable name="prismjs.text.color">#7b8ab8</xsl:variable>
-  <xsl:variable name="prismjs.background.color">#d9e3f1</xsl:variable>
   <xsl:variable name="prismjs.comment.color">#92a0c6</xsl:variable>
   <xsl:variable name="prismjs.punctuation.color">#92a0c6</xsl:variable>
   <xsl:variable name="prismjs.namespace.color">#92a0c6</xsl:variable>

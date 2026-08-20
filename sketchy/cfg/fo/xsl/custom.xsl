@@ -7,7 +7,6 @@
 >
   <xsl:template match="*" mode="prismDecoration" priority="10">
     <xsl:attribute name="color"><xsl:value-of select="$prismjs.text.color"/></xsl:attribute>
-    <xsl:attribute name="background-color"><xsl:value-of select="$prismjs.background.color"/></xsl:attribute>
     <xsl:call-template name="bootstrap.decoration"/>
     <xsl:attribute name="padding"><xsl:value-of select="$bootstrap-spacing-1"/></xsl:attribute>
   </xsl:template>

@@ -7,7 +7,6 @@
 
   <!-- PrismJS code block styling aligned with Vapor variables -->
   <xsl:variable name="prismjs.text.color">#32fbe2</xsl:variable>
-  <xsl:variable name="prismjs.background.color">#391047</xsl:variable>
   <xsl:variable name="prismjs.comment.color">#34c0bb</xsl:variable>
   <xsl:variable name="prismjs.punctuation.color">#34c0bb</xsl:variable>
   <xsl:variable name="prismjs.namespace.color">#34c0bb</xsl:variable>

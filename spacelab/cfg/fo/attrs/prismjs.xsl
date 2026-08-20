@@ -7,7 +7,6 @@
 
   <!-- PrismJS code block styling aligned with Spacelab variables -->
   <xsl:variable name="prismjs.text.color">#777777</xsl:variable>
-  <xsl:variable name="prismjs.background.color">#f0f0f0</xsl:variable>
   <xsl:variable name="prismjs.comment.color">#959595</xsl:variable>
   <xsl:variable name="prismjs.punctuation.color">#959595</xsl:variable>
   <xsl:variable name="prismjs.namespace.color">#959595</xsl:variable>

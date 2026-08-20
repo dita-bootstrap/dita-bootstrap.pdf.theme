@@ -7,7 +7,6 @@
 
   <!-- PrismJS code block styling aligned with Cyborg variables -->
   <xsl:variable name="prismjs.text.color">#adafae</xsl:variable>
-  <xsl:variable name="prismjs.background.color">#121212</xsl:variable>
   <xsl:variable name="prismjs.comment.color">#868887</xsl:variable>
   <xsl:variable name="prismjs.punctuation.color">#868887</xsl:variable>
   <xsl:variable name="prismjs.namespace.color">#868887</xsl:variable>

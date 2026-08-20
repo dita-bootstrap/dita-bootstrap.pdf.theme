@@ -7,7 +7,6 @@
 
   <!-- PrismJS code block styling aligned with Minty variables -->
   <xsl:variable name="prismjs.text.color">#888888</xsl:variable>
-  <xsl:variable name="prismjs.background.color">#fdeff0</xsl:variable>
   <xsl:variable name="prismjs.comment.color">#a5a2a2</xsl:variable>
   <xsl:variable name="prismjs.punctuation.color">#a5a2a2</xsl:variable>
   <xsl:variable name="prismjs.namespace.color">#a5a2a2</xsl:variable>
