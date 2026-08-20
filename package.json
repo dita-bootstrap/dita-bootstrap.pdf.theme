@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@prettier/plugin-xml": "3.4.2",
-    "lefthook": "^2.1.6",
-    "prettier": "3.9.4"
+    "lefthook": "^2.1.10",
+    "prettier": "3.9.6"
   }
 }
