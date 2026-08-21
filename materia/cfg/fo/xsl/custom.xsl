@@ -8,7 +8,7 @@
     <xsl:attribute name="color"><xsl:value-of select="$prismjs.text.color"/></xsl:attribute>
     <xsl:attribute name="border-style">solid</xsl:attribute>
     <xsl:attribute name="border-width"><xsl:value-of select="$bootstrap-border-width"/></xsl:attribute>
-    <xsl:attribute name="border-color"><xsl:value-of select="$bootstrap-secondary"/></xsl:attribute>
+    <xsl:attribute name="border-color"><xsl:value-of select="$bootstrap-card-border-color"/></xsl:attribute>
     <xsl:call-template name="processBootstrapRounded">
       <xsl:with-param name="attrValue" select="(@rounded, 'yes')[1]"/>
     </xsl:call-template>

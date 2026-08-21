@@ -102,7 +102,7 @@
   <xsl:variable name="bootstrap-body-bg">#fcfcfc</xsl:variable>
   <xsl:variable name="bootstrap-body-color">#212529</xsl:variable>
   <xsl:variable name="bootstrap-border-color">#ccc</xsl:variable>
-  <xsl:variable name="bootstrap-rounded">4pt</xsl:variable>
+  <xsl:variable name="bootstrap-rounded">6pt</xsl:variable>
 
   <!-- Heading Font Sizes -->
   <xsl:variable name="bootstrap-h1-font-size">30pt</xsl:variable>

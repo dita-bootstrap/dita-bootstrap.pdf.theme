@@ -102,6 +102,7 @@
   <xsl:variable name="bootstrap-body-bg">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-body-color">#444444</xsl:variable>
   <xsl:variable name="bootstrap-border-color">#ededed</xsl:variable>
+  <xsl:variable name="bootstrap-card-border-color">#a991d4</xsl:variable>
   <xsl:variable name="bootstrap-rounded">0</xsl:variable>
 
   <!-- Heading Font Sizes -->

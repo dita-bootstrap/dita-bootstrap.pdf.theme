@@ -12,7 +12,7 @@
     <xsl:attribute name="border-right-width">0.75pt</xsl:attribute>
     <xsl:attribute name="border-bottom-width">3pt</xsl:attribute>
     <xsl:attribute name="border-left-width">0.75pt</xsl:attribute>
-    <xsl:attribute name="border-color"><xsl:value-of select="$bootstrap-secondary"/></xsl:attribute>
+    <xsl:attribute name="border-color"><xsl:value-of select="$bootstrap-card-border-color"/></xsl:attribute>
     <xsl:call-template name="processBootstrapRounded">
       <xsl:with-param name="attrValue" select="(@rounded, 'yes')[1]"/>
     </xsl:call-template>
