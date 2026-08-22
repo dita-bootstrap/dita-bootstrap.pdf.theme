@@ -6,18 +6,22 @@
 >
 
   <!-- PrismJS code block styling aligned with Solar variables -->
-  <xsl:variable name="prismjs.text.color">#839496</xsl:variable>
-  <xsl:variable name="prismjs.comment.color">#677e82</xsl:variable>
-  <xsl:variable name="prismjs.punctuation.color">#677e82</xsl:variable>
-  <xsl:variable name="prismjs.namespace.color">#677e82</xsl:variable>
-  <xsl:variable name="prismjs.tag.color">#ed65a3</xsl:variable>
-  <xsl:variable name="prismjs.string.color">#55b4ad</xsl:variable>
-  <xsl:variable name="prismjs.keyword.color">#c4a133</xsl:variable>
-  <xsl:variable name="prismjs.type.color">#dc5e9b</xsl:variable>
-  <xsl:variable name="prismjs.regex.color">#fd9843</xsl:variable>
-  <xsl:variable name="prismjs.deleted.color">#dc5e9b</xsl:variable>
-  <xsl:variable name="prismjs.url.color">#d56f45</xsl:variable>
+  <xsl:variable name="prismjs.background.color">#eee8d5</xsl:variable>
+  <xsl:variable name="prismjs.text.color">#657b83</xsl:variable>
+  <xsl:variable name="prismjs.comment.color">#93a1a1</xsl:variable>
+  <xsl:variable name="prismjs.punctuation.color">#586e75</xsl:variable>
+  <xsl:variable name="prismjs.namespace.color">#93a1a1</xsl:variable>
+  <xsl:variable name="prismjs.tag.color">#dc322f</xsl:variable>
+  <xsl:variable name="prismjs.string.color">#2aa198</xsl:variable>
+  <xsl:variable name="prismjs.keyword.color">#859900</xsl:variable>
+  <xsl:variable name="prismjs.type.color">#d33682</xsl:variable>
+  <xsl:variable name="prismjs.regex.color">#cb4b16</xsl:variable>
+  <xsl:variable name="prismjs.deleted.color">#dc322f</xsl:variable>
+  <xsl:variable name="prismjs.url.color">#6c71c4</xsl:variable>
 
   <xsl:variable name="prismjs.font-weight">normal</xsl:variable>
+
+  <xsl:variable name="prismjs.card.background.color" select="$prismjs.background.color"/>
+  <xsl:variable name="prismjs.border.color">#d1ccbb</xsl:variable>
 
 </xsl:stylesheet>
