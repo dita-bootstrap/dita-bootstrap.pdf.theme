@@ -12,6 +12,8 @@
   <!-- Cyborg Theme Base Colors (Adapted for Print/Light Mode) -->
 
   <xsl:variable name="bootstrap-link">#2a9fd6</xsl:variable>
+  <!-- HTML headings are white (dark-mode site); using primary instead, white prints invisible -->
+  <xsl:variable name="bootstrap-heading-color" select="$bootstrap-primary"/>
 
   <!-- Primary -->
   <xsl:variable name="bootstrap-primary">#2a9fd6</xsl:variable>

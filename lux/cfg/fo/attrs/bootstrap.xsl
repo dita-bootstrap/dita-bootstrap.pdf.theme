@@ -12,6 +12,7 @@
   <!-- Lux Theme Base Colors -->
 
   <xsl:variable name="bootstrap-link">#1a1a1a</xsl:variable>
+  <xsl:variable name="bootstrap-heading-color">#1a1a1a</xsl:variable>
 
   <!-- Primary -->
   <xsl:variable name="bootstrap-primary">#1a1a1a</xsl:variable>

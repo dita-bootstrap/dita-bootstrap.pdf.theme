@@ -12,6 +12,7 @@
   <!-- Minty Theme Base Colors -->
 
   <xsl:variable name="bootstrap-link">#78c2ad</xsl:variable>
+  <xsl:variable name="bootstrap-heading-color">#5a5a5a</xsl:variable>
 
   <!-- Primary -->
   <xsl:variable name="bootstrap-primary">#78c2ad</xsl:variable>

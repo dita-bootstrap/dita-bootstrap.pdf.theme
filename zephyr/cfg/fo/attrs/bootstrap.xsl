@@ -12,6 +12,7 @@
   <!-- Zephyr Theme Base Colors -->
 
   <xsl:variable name="bootstrap-link">#3459e6</xsl:variable>
+  <xsl:variable name="bootstrap-heading-color" select="$bootstrap-primary"/>
 
   <!-- Primary -->
   <xsl:variable name="bootstrap-primary">#3459e6</xsl:variable>

@@ -12,6 +12,7 @@
   <!-- Spacelab Theme Base Colors -->
 
   <xsl:variable name="bootstrap-link">#3399f3</xsl:variable>
+  <xsl:variable name="bootstrap-heading-color">#2d2d2d</xsl:variable>
 
   <!-- Primary -->
   <xsl:variable name="bootstrap-primary">#446e9b</xsl:variable>

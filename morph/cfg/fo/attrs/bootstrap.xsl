@@ -12,6 +12,7 @@
   <!-- Morph Theme Base Colors -->
 
   <xsl:variable name="bootstrap-link">#485785</xsl:variable>
+  <xsl:variable name="bootstrap-heading-color">#485785</xsl:variable>
 
   <!-- Primary -->
   <xsl:variable name="bootstrap-primary">#378dfc</xsl:variable>

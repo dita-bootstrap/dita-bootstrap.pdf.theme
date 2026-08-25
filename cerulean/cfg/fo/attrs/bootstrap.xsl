@@ -12,6 +12,7 @@
   <!-- Cerulean Theme Base Colors -->
 
   <xsl:variable name="bootstrap-link">#2fa4e7</xsl:variable>
+  <xsl:variable name="bootstrap-heading-color">#2fa4e7</xsl:variable>
 
   <!-- Primary -->
   <xsl:variable name="bootstrap-primary">#2fa4e7</xsl:variable>
