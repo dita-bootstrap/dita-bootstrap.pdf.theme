@@ -6,6 +6,7 @@
 >
 
   <xsl:import href="./bootstrap.xsl"/>
+  <xsl:import href="./topic-attr.xsl"/>
   <xsl:import href="./prismjs.xsl"/>
   <xsl:import href="./dita-ot.xsl"/>
 

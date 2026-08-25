@@ -108,11 +108,11 @@
   <xsl:variable name="bootstrap-rounded">6pt</xsl:variable>
 
   <!-- Heading Font Sizes (converted from Brite CSS rem values) -->
-  <xsl:variable name="bootstrap-h1-font-size">26pt</xsl:variable>
+  <xsl:variable name="bootstrap-h1-font-size">26.25pt</xsl:variable>
   <xsl:variable name="bootstrap-h2-font-size">21pt</xsl:variable>
-  <xsl:variable name="bootstrap-h3-font-size">18.5pt</xsl:variable>
+  <xsl:variable name="bootstrap-h3-font-size">18.375pt</xsl:variable>
   <xsl:variable name="bootstrap-h4-font-size">15.75pt</xsl:variable>
-  <xsl:variable name="bootstrap-h5-font-size">13.25pt</xsl:variable>
+  <xsl:variable name="bootstrap-h5-font-size">13.125pt</xsl:variable>
   <xsl:variable name="bootstrap-h6-font-size">10.5pt</xsl:variable>
 
 

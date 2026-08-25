@@ -111,7 +111,7 @@
   <xsl:variable name="bootstrap-h3-font-size">18pt</xsl:variable>
   <xsl:variable name="bootstrap-h4-font-size">15pt</xsl:variable>
   <xsl:variable name="bootstrap-h5-font-size">12pt</xsl:variable>
-  <xsl:variable name="bootstrap-h6-font-size">10pt</xsl:variable>
+  <xsl:variable name="bootstrap-h6-font-size">9pt</xsl:variable>
   
   <xsl:variable name="prismjs.border.width">0pt</xsl:variable>
 
