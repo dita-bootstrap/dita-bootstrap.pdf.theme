@@ -16,6 +16,8 @@
   <!-- Quartz Theme Base Colors (Adapted for light mode print) -->
 
   <xsl:variable name="bootstrap-link">#f184b5</xsl:variable>
+  <xsl:variable name="bootstrap-badge-default-bg">#575bab</xsl:variable>
+
 
   <!-- Primary -->
   <xsl:variable name="bootstrap-primary">#e83283</xsl:variable>
