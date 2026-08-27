@@ -19,6 +19,7 @@
   <!-- HTML headings are white (dark-mode site); using primary instead, white prints invisible -->
   <xsl:variable name="bootstrap-heading-color" select="$bootstrap-primary"/>
   <xsl:variable name="bootstrap-heading-font-weight">500</xsl:variable>
+  <xsl:variable name="bootstrap-badge-default-bg">#212529</xsl:variable>
 
   <!-- Primary -->
   <xsl:variable name="bootstrap-primary">#2a9fd6</xsl:variable>
