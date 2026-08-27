@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	This file is part of the DITA Bootstrap PDF Themes plug-in for DITA Open Toolkit.
+	See the accompanying LICENSE file for applicable licenses.
+-->
 <xsl:stylesheet
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -86,13 +90,13 @@
     <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-badge-danger-bg"/></xsl:attribute>
     <xsl:attribute name="color"><xsl:value-of select="$bootstrap-badge-danger-color"/></xsl:attribute>
   </xsl:attribute-set>
-  <xsl:attribute-set name="__table__light">
-    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-badge-light-bg"/></xsl:attribute>
-    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-badge-light-color"/></xsl:attribute>
+  <xsl:attribute-set name="__table__accent">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-badge-accent-bg"/></xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-badge-accent-color"/></xsl:attribute>
   </xsl:attribute-set>
-  <xsl:attribute-set name="__table__dark">
-    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-badge-dark-bg"/></xsl:attribute>
-    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-badge-dark-color"/></xsl:attribute>
+  <xsl:attribute-set name="__table__inverse">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-badge-inverse-bg"/></xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-badge-inverse-color"/></xsl:attribute>
   </xsl:attribute-set>
 
   <!-- Background Subtle Variants -->
@@ -114,11 +118,11 @@
   <xsl:attribute-set name="__bg__danger-subtle">
     <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-danger-subtle"/></xsl:attribute>
   </xsl:attribute-set>
-  <xsl:attribute-set name="__bg__light-subtle">
-    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-light-subtle"/></xsl:attribute>
+  <xsl:attribute-set name="__bg__accent-subtle">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-accent-subtle"/></xsl:attribute>
   </xsl:attribute-set>
-  <xsl:attribute-set name="__bg__dark-subtle">
-    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-dark-subtle"/></xsl:attribute>
+  <xsl:attribute-set name="__bg__inverse-subtle">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-inverse-subtle"/></xsl:attribute>
   </xsl:attribute-set>
 
 </xsl:stylesheet>

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	This file is part of the DITA Bootstrap PDF Themes plug-in for DITA Open Toolkit.
+	See the accompanying LICENSE file for applicable licenses.
+-->
 <xsl:stylesheet
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -41,11 +45,11 @@
       <xsl:call-template name="commonattributes"/>
 
       <xsl:variable name="table" select="ancestor::*[contains(@class, ' topic/table ')][1]"/>
-      <xsl:variable name="tableTheme" select="$table/@color"/>
+      <xsl:variable name="tableTheme" select="$table/@theme"/>
       <xsl:variable name="thead" select="parent::*"/>
       
-      <!-- Better detection for themed thead (via @color or outputclass) -->
-      <xsl:variable name="theadColor" select="$thead/@color"/>
+      <!-- Better detection for themed thead (via @theme or outputclass) -->
+      <xsl:variable name="theadColor" select="$thead/@theme"/>
       <xsl:variable name="theadClass" select="tokenize($thead/@outputclass, '\s+')[starts-with(., 'table-')][1]"/>
       <xsl:variable
         name="theadTheme"
@@ -76,9 +80,9 @@
     <fo:table-row xsl:use-attribute-sets="tbody.row">
       <xsl:call-template name="commonattributes"/>
 
-      <xsl:variable name="rowTheme" select="@color"/>
+      <xsl:variable name="rowTheme" select="@theme"/>
       <xsl:variable name="table" select="ancestor::*[contains(@class, ' topic/table ')][1]"/>
-      <xsl:variable name="tableTheme" select="$table/@color"/>
+      <xsl:variable name="tableTheme" select="$table/@theme"/>
       <xsl:variable name="striped" select="$table/@striped = 'yes'"/>
       
       <xsl:variable name="rowIndex" select="count(preceding-sibling::*[contains(@class, ' topic/row ')]) + 1"/>
@@ -125,7 +129,7 @@
       select="parent::*[contains(@class, ' topic/row ')]/parent::*[contains(@class, ' topic/tfoot ')]"
     />
     <xsl:variable name="table" select="ancestor::*[contains(@class, ' topic/table ')][1]"/>
-    <xsl:variable name="tableTheme" select="$table/@color"/>
+    <xsl:variable name="tableTheme" select="$table/@theme"/>
     <xsl:variable name="stripedCols" select="$table/@striped-columns = 'yes'"/>
     
     <xsl:variable name="colIndex">
@@ -197,9 +201,9 @@
         <xsl:attribute name="border-top-width">2pt</xsl:attribute>
       </xsl:if>
       
-      <!-- Better detection for themed thead (via @color or outputclass) -->
+      <!-- Better detection for themed thead (via @theme or outputclass) -->
       <xsl:variable name="thead" select="ancestor::*[contains(@class, ' topic/thead ')][1]"/>
-      <xsl:variable name="theadColor" select="$thead/@color"/>
+      <xsl:variable name="theadColor" select="$thead/@theme"/>
       <xsl:variable name="theadClass" select="tokenize($thead/@outputclass, '\s+')[starts-with(., 'table-')][1]"/>
       <xsl:variable
         name="theadTheme"
@@ -207,9 +211,9 @@
       />
 
       <xsl:choose>
-        <xsl:when test="@color">
+        <xsl:when test="@theme">
           <xsl:call-template name="applyLuxTableTheme">
-            <xsl:with-param name="theme" select="@color"/>
+            <xsl:with-param name="theme" select="@theme"/>
             <xsl:with-param name="isHeader" select="$isHeader"/>
           </xsl:call-template>
         </xsl:when>

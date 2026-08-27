@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	This file is part of the DITA Bootstrap PDF Themes plug-in for DITA Open Toolkit.
+	See the accompanying LICENSE file for applicable licenses.
+-->
 <xsl:stylesheet
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -7,13 +11,12 @@
 
   <xsl:template match="*" mode="prismDecoration" priority="10">
     <xsl:attribute name="color"><xsl:value-of select="$prismjs.text.color"/></xsl:attribute>
-    <xsl:attribute name="background-color"><xsl:value-of select="$prismjs.background.color"/></xsl:attribute>
     <xsl:attribute name="border-style">solid</xsl:attribute>
-    <xsl:attribute name="border-top-width">0pt</xsl:attribute>
+    <xsl:attribute name="border-top-width">1pt</xsl:attribute>
     <xsl:attribute name="border-right-width">0.75pt</xsl:attribute>
     <xsl:attribute name="border-bottom-width">3pt</xsl:attribute>
     <xsl:attribute name="border-left-width">0.75pt</xsl:attribute>
-    <xsl:attribute name="border-color"><xsl:value-of select="$bootstrap-secondary"/></xsl:attribute>
+    <xsl:attribute name="border-color"><xsl:value-of select="$bootstrap-card-border-color"/></xsl:attribute>
     <xsl:call-template name="processBootstrapRounded">
       <xsl:with-param name="attrValue" select="(@rounded, 'yes')[1]"/>
     </xsl:call-template>
@@ -39,8 +42,9 @@
 
     <xsl:variable name="theme-color">
       <xsl:choose>
-        <!-- Specialized alerts store the theme in the @color attribute -->
-        <xsl:when test="@color"><xsl:value-of select="@color"/></xsl:when>
+        <!-- Honor a theme already resolved upstream (e.g. getNoteTheme, @theme)
+             instead of re-deriving it here and risking a different answer. -->
+        <xsl:when test="$theme != ''"><xsl:value-of select="$theme"/></xsl:when>
         <!-- Buttons handling: extract theme from btn-* or default to primary -->
         <xsl:when
           test="contains(@class, ' bootstrap-d/button ') or exists(tokenize(@outputclass, ' ')[starts-with(., 'btn-')])"
@@ -67,8 +71,8 @@
         <xsl:when test="contains(@outputclass, 'alert-info')">info</xsl:when>
         <xsl:when test="contains(@outputclass, 'alert-warning')">warning</xsl:when>
         <xsl:when test="contains(@outputclass, 'alert-danger')">danger</xsl:when>
-        <xsl:when test="contains(@outputclass, 'alert-light')">light</xsl:when>
-        <xsl:when test="contains(@outputclass, 'alert-dark')">dark</xsl:when>
+        <xsl:when test="contains(@outputclass, 'alert-accent')">accent</xsl:when>
+        <xsl:when test="contains(@outputclass, 'alert-inverse')">inverse</xsl:when>
         <xsl:otherwise>secondary</xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
@@ -83,8 +87,8 @@
         <xsl:when test="$theme-color = 'info'"><xsl:value-of select="$bootstrap-info-alert-border"/></xsl:when>
         <xsl:when test="$theme-color = 'warning'"><xsl:value-of select="$bootstrap-warning-alert-border"/></xsl:when>
         <xsl:when test="$theme-color = 'danger'"><xsl:value-of select="$bootstrap-danger-alert-border"/></xsl:when>
-        <xsl:when test="$theme-color = 'light'"><xsl:value-of select="$bootstrap-light-alert-border"/></xsl:when>
-        <xsl:when test="$theme-color = 'dark'"><xsl:value-of select="$bootstrap-dark-alert-border"/></xsl:when>
+        <xsl:when test="$theme-color = 'accent'"><xsl:value-of select="$bootstrap-accent-alert-border"/></xsl:when>
+        <xsl:when test="$theme-color = 'inverse'"><xsl:value-of select="$bootstrap-inverse-alert-border"/></xsl:when>
         <xsl:otherwise><xsl:value-of select="$bootstrap-secondary-alert-border"/></xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
@@ -109,8 +113,7 @@
     </xsl:if>
   </xsl:template>
 
-  <!-- Codeblock support: Priority 5 keeps PrismJS active if installed while decorating standard codeblocks -->
-  <xsl:template match="*[contains(@class, ' topic/pre ')]" priority="5">
+  <xsl:template match="*[contains(@class, ' topic/pre ') and not(contains(@class, ' pr-d/codeblock '))]" priority="5">
     <fo:block xsl:use-attribute-sets="pre">
       <xsl:call-template name="commonattributes"/>
       <xsl:call-template name="bootstrap.decoration"/>

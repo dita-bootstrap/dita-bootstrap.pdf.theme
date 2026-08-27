@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	This file is part of the DITA Bootstrap PDF Themes plug-in for DITA Open Toolkit.
+	See the accompanying LICENSE file for applicable licenses.
+-->
 <xsl:stylesheet
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
   version="2.0"
 >
 
+  <xsl:import href="./prismjs.xsl"/>
+
   <!-- Typography Overrides (using logical names for maximum DITA-OT compatibility) -->
   <xsl:variable name="default-font-family">sans-serif</xsl:variable>
   <xsl:variable name="monospaced-font-family">monospace</xsl:variable>
-
-  <!-- Override PrismJS code block styling based on custom CSS theme -->
-  <xsl:variable name="prismjs.text.color">#2b2f32</xsl:variable>
-  <xsl:variable name="prismjs.background.color"><xsl:value-of select="$bootstrap-secondary-subtle"/></xsl:variable>
-  <xsl:variable name="prismjs.comment.color">#adb5bd</xsl:variable>
-  <xsl:variable name="prismjs.punctuation.color">#6c757d</xsl:variable>
-  <xsl:variable name="prismjs.string.color">#198754</xsl:variable>
-  <xsl:variable name="prismjs.function.color">#fd7e14</xsl:variable>
-  <xsl:variable name="prismjs.name.color">#0d6efd</xsl:variable>
-  <xsl:variable name="prismjs.tag.color">#dc3545</xsl:variable>
-  <xsl:variable name="prismjs.url.color">#0dcaf0</xsl:variable>
-  <xsl:variable name="prismjs.keyword.color">#20c997</xsl:variable>
 
   <!-- Global Font Overrides -->
   

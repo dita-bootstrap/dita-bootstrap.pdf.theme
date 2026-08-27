@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	This file is part of the DITA Bootstrap PDF Themes plug-in for DITA Open Toolkit.
+	See the accompanying LICENSE file for applicable licenses.
+-->
 <xsl:stylesheet
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -160,9 +164,9 @@
     <xsl:attribute name="color"><xsl:value-of select="$bootstrap-table-primary-color"/></xsl:attribute>
   </xsl:attribute-set>
 
-  <xsl:attribute-set name="__table__light">
-    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-table-light-bg"/></xsl:attribute>
-    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-table-light-color"/></xsl:attribute>
+  <xsl:attribute-set name="__table__accent">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-table-accent-bg"/></xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-table-accent-color"/></xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="__table__secondary">
@@ -190,8 +194,8 @@
     <xsl:attribute name="color"><xsl:value-of select="$bootstrap-table-danger-color"/></xsl:attribute>
   </xsl:attribute-set>
 
-  <xsl:attribute-set name="__table__dark">
-    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-table-dark-bg"/></xsl:attribute>
-    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-table-dark-color"/></xsl:attribute>
+  <xsl:attribute-set name="__table__inverse">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-table-inverse-bg"/></xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-table-inverse-color"/></xsl:attribute>
   </xsl:attribute-set>
 </xsl:stylesheet>
