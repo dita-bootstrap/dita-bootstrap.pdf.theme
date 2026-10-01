@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<font-mappings>
+  <font-table>
+    <aliases><alias name="serif">Serif</alias></aliases>
+    <aliases><alias name="sans-serif">Sans</alias></aliases>
+    <aliases><alias name="monospace">Monospaced</alias></aliases>
+    <aliases><alias name="Helvetica">Sans</alias></aliases>
+    <aliases><alias name="Courier">Monospaced</alias></aliases>
+
+    <logical-font name="Sans">
+      <physical-font char-set="default">
+        <font-face
+        >Roboto, Noto Sans, Liberation Sans, Arial Unicode MS, Tahoma, Batang, SimSun</font-face>
+      </physical-font>
+    </logical-font>
+
+    <logical-font name="Serif">
+      <physical-font char-set="default">
+        <font-face>Roboto, Arial Unicode MS, Tahoma, Batang, SimSun</font-face>
+      </physical-font>
+    </logical-font>
+
+    <logical-font name="Monospaced">
+      <physical-font char-set="default">
+        <font-face
+        >Liberation Mono, Arial Unicode MS, Tahoma, Batang, SimSun</font-face>
+      </physical-font>
+    </logical-font>
+  </font-table>
+</font-mappings>

@@ -2,6 +2,7 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
   <uri name="cfg:fo/attrs/custom.xsl" uri="fo/attrs/custom.xsl"/>
   <uri name="cfg:fo/attrs/bootstrap.xsl" uri="fo/attrs/bootstrap.xsl"/>
+  <uri name="cfg:fo/attrs/topic-attr.xsl" uri="fo/attrs/topic-attr.xsl"/>
   <uri name="cfg:fo/attrs/prismjs.xsl" uri="fo/attrs/prismjs.xsl"/>
   <uri name="cfg:fo/attrs/dita-ot.xsl" uri="fo/attrs/dita-ot.xsl"/>
   <uri name="cfg:fo/xsl/custom.xsl" uri="fo/xsl/custom.xsl"/>

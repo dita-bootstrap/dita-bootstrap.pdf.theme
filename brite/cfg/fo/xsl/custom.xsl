@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	This file is part of the DITA Bootstrap PDF Themes plug-in for DITA Open Toolkit.
+	See the accompanying LICENSE file for applicable licenses.
+-->
 <xsl:stylesheet
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -13,7 +17,6 @@
   
   <xsl:template match="*" mode="prismDecoration" priority="10">
     <xsl:attribute name="color"><xsl:value-of select="$prismjs.text.color"/></xsl:attribute>
-    <xsl:attribute name="background-color"><xsl:value-of select="$prismjs.background.color"/></xsl:attribute>
     <xsl:attribute name="border-style">solid</xsl:attribute>
     <xsl:attribute name="border-color">#000000</xsl:attribute>
     <xsl:attribute name="border-width"><xsl:value-of select="$bootstrap-border-width"/></xsl:attribute>
@@ -57,7 +60,6 @@
     <xsl:variable name="token" select="tokenize(@outputclass, ' ')[starts-with(., 'btn-')][1]"/>
     <xsl:variable name="theme">
       <xsl:choose>
-        <xsl:when test="@color"><xsl:value-of select="@color"/></xsl:when>
         <xsl:when test="starts-with($token, 'btn-outline-')">
           <xsl:value-of select="substring-after($token, 'btn-outline-')"/>
         </xsl:when>

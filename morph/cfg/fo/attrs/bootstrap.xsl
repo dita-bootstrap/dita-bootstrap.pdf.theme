@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	This file is part of the DITA Bootstrap PDF Themes plug-in for DITA Open Toolkit.
+	See the accompanying LICENSE file for applicable licenses.
+-->
 <xsl:stylesheet
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -12,6 +16,8 @@
   <!-- Morph Theme Base Colors -->
 
   <xsl:variable name="bootstrap-link">#485785</xsl:variable>
+  <xsl:variable name="bootstrap-heading-color">#485785</xsl:variable>
+  <xsl:variable name="bootstrap-heading-font-weight">500</xsl:variable>
 
   <!-- Primary -->
   <xsl:variable name="bootstrap-primary">#378dfc</xsl:variable>
@@ -19,19 +25,19 @@
   <xsl:variable name="bootstrap-badge-primary-color">#fff</xsl:variable>
   <xsl:variable name="bootstrap-btn-primary-bg">#378dfc</xsl:variable>
   <xsl:variable name="bootstrap-btn-primary-color">#fff</xsl:variable>
-  <xsl:variable name="bootstrap-primary-subtle">#378dfc</xsl:variable>
-  <xsl:variable name="bootstrap-primary-subtle-text">#ffffff</xsl:variable>
+  <xsl:variable name="bootstrap-primary-subtle">#e1eeff</xsl:variable>
+  <xsl:variable name="bootstrap-primary-subtle-text">#296abd</xsl:variable>
   <xsl:variable name="bootstrap-table-primary-bg">#d7e8fe</xsl:variable>
   <xsl:variable name="bootstrap-table-primary-color">#7b8ab8</xsl:variable>
 
   <!-- Secondary -->
-  <xsl:variable name="bootstrap-secondary">#d9e3f1</xsl:variable>
+  <xsl:variable name="bootstrap-secondary">#9ca7ca</xsl:variable>
   <xsl:variable name="bootstrap-badge-secondary-bg" select="$bootstrap-secondary"/>
   <xsl:variable name="bootstrap-badge-secondary-color">#000</xsl:variable>
   <xsl:variable name="bootstrap-btn-secondary-bg">#d9e3f1</xsl:variable>
   <xsl:variable name="bootstrap-btn-secondary-color">#000</xsl:variable>
   <xsl:variable name="bootstrap-secondary-subtle">#d9e3f1</xsl:variable>
-  <xsl:variable name="bootstrap-secondary-subtle-text">#ffffff</xsl:variable>
+  <xsl:variable name="bootstrap-secondary-subtle-text">#212529</xsl:variable>
   <xsl:variable name="bootstrap-table-secondary-bg">#f7f9fc</xsl:variable>
   <xsl:variable name="bootstrap-table-secondary-color">#7b8ab8</xsl:variable>
 
@@ -41,8 +47,8 @@
   <xsl:variable name="bootstrap-badge-success-color">#fff</xsl:variable>
   <xsl:variable name="bootstrap-btn-success-bg">#43cc29</xsl:variable>
   <xsl:variable name="bootstrap-btn-success-color">#fff</xsl:variable>
-  <xsl:variable name="bootstrap-success-subtle">#43cc29</xsl:variable>
-  <xsl:variable name="bootstrap-success-subtle-text">#ffffff</xsl:variable>
+  <xsl:variable name="bootstrap-success-subtle">#e3f7df</xsl:variable>
+  <xsl:variable name="bootstrap-success-subtle-text">#287a19</xsl:variable>
   <xsl:variable name="bootstrap-table-success-bg">#d9f5d4</xsl:variable>
   <xsl:variable name="bootstrap-table-success-color">#7b8ab8</xsl:variable>
 
@@ -52,8 +58,8 @@
   <xsl:variable name="bootstrap-badge-info-color">#fff</xsl:variable>
   <xsl:variable name="bootstrap-btn-info-bg">#5b62f4</xsl:variable>
   <xsl:variable name="bootstrap-btn-info-color">#fff</xsl:variable>
-  <xsl:variable name="bootstrap-info-subtle">#5b62f4</xsl:variable>
-  <xsl:variable name="bootstrap-info-subtle-text">#ffffff</xsl:variable>
+  <xsl:variable name="bootstrap-info-subtle">#e6e7fd</xsl:variable>
+  <xsl:variable name="bootstrap-info-subtle-text">#5258dc</xsl:variable>
   <xsl:variable name="bootstrap-table-info-bg">#dee0fd</xsl:variable>
   <xsl:variable name="bootstrap-table-info-color">#7b8ab8</xsl:variable>
 
@@ -63,8 +69,8 @@
   <xsl:variable name="bootstrap-badge-warning-color">#fff</xsl:variable>
   <xsl:variable name="bootstrap-btn-warning-bg">#ffc107</xsl:variable>
   <xsl:variable name="bootstrap-btn-warning-color">#fff</xsl:variable>
-  <xsl:variable name="bootstrap-warning-subtle">#ffc107</xsl:variable>
-  <xsl:variable name="bootstrap-warning-subtle-text">#ffffff</xsl:variable>
+  <xsl:variable name="bootstrap-warning-subtle">#fff6da</xsl:variable>
+  <xsl:variable name="bootstrap-warning-subtle-text">#8c6a04</xsl:variable>
   <xsl:variable name="bootstrap-table-warning-bg">#fff3cd</xsl:variable>
   <xsl:variable name="bootstrap-table-warning-color">#7b8ab8</xsl:variable>
 
@@ -74,32 +80,31 @@
   <xsl:variable name="bootstrap-badge-danger-color">#fff</xsl:variable>
   <xsl:variable name="bootstrap-btn-danger-bg">#e52527</xsl:variable>
   <xsl:variable name="bootstrap-btn-danger-color">#fff</xsl:variable>
-  <xsl:variable name="bootstrap-danger-subtle">#e52527</xsl:variable>
-  <xsl:variable name="bootstrap-danger-subtle-text">#ffffff</xsl:variable>
+  <xsl:variable name="bootstrap-danger-subtle">#fbdedf</xsl:variable>
+  <xsl:variable name="bootstrap-danger-subtle-text">#c31f21</xsl:variable>
   <xsl:variable name="bootstrap-table-danger-bg">#fad3d4</xsl:variable>
   <xsl:variable name="bootstrap-table-danger-color">#7b8ab8</xsl:variable>
 
-  <!-- Light -->
-  <xsl:variable name="bootstrap-light">#f0f5fa</xsl:variable>
-  <xsl:variable name="bootstrap-badge-light-bg" select="$bootstrap-light"/>
-  <xsl:variable name="bootstrap-badge-light-color">#000</xsl:variable>
-  <xsl:variable name="bootstrap-btn-light-bg">#f0f5fa</xsl:variable>
-  <xsl:variable name="bootstrap-btn-light-color">#000</xsl:variable>
-  <xsl:variable name="bootstrap-light-subtle">#fefefe</xsl:variable>
-  <xsl:variable name="bootstrap-light-subtle-text">#141619</xsl:variable>
-  <xsl:variable name="bootstrap-table-light-bg">#f0f5fa</xsl:variable>
-  <xsl:variable name="bootstrap-table-light-color">#7b8ab8</xsl:variable>
-
-  <!-- Dark -->
-  <xsl:variable name="bootstrap-dark">#212529</xsl:variable>
-  <xsl:variable name="bootstrap-badge-dark-bg" select="$bootstrap-dark"/>
-  <xsl:variable name="bootstrap-badge-dark-color">#fff</xsl:variable>
-  <xsl:variable name="bootstrap-btn-dark-bg">#212529</xsl:variable>
-  <xsl:variable name="bootstrap-btn-dark-color">#fff</xsl:variable>
-  <xsl:variable name="bootstrap-dark-subtle">#ced4da</xsl:variable>
-  <xsl:variable name="bootstrap-dark-subtle-text">#141619</xsl:variable>
-  <xsl:variable name="bootstrap-table-dark-bg">#212529</xsl:variable>
-  <xsl:variable name="bootstrap-table-dark-color">#fff</xsl:variable>
+  <!-- Accent -->
+  <xsl:variable name="bootstrap-accent">#e559fc</xsl:variable>
+  <xsl:variable name="bootstrap-badge-accent-bg" select="$bootstrap-accent"/>
+  <xsl:variable name="bootstrap-badge-accent-color">#fff</xsl:variable>
+  <xsl:variable name="bootstrap-btn-accent-bg" select="$bootstrap-accent"/>
+  <xsl:variable name="bootstrap-btn-accent-color">#fff</xsl:variable>
+  <xsl:variable name="bootstrap-accent-subtle">#fbe6ff</xsl:variable>
+    <xsl:variable name="bootstrap-accent-subtle-text">#a03eb0</xsl:variable>
+  <xsl:variable name="bootstrap-table-accent-bg" select="$bootstrap-accent-subtle"/>
+  <xsl:variable name="bootstrap-table-accent-color">#222</xsl:variable>
+  <!-- Inverse -->
+  <xsl:variable name="bootstrap-inverse">#212529</xsl:variable>
+  <xsl:variable name="bootstrap-badge-inverse-bg" select="$bootstrap-inverse"/>
+  <xsl:variable name="bootstrap-badge-inverse-color">#fff</xsl:variable>
+  <xsl:variable name="bootstrap-btn-inverse-bg">#212529</xsl:variable>
+  <xsl:variable name="bootstrap-btn-inverse-color">#fff</xsl:variable>
+  <xsl:variable name="bootstrap-inverse-subtle">#dededf</xsl:variable>
+  <xsl:variable name="bootstrap-inverse-subtle-text">#212529</xsl:variable>
+  <xsl:variable name="bootstrap-table-inverse-bg">#212529</xsl:variable>
+  <xsl:variable name="bootstrap-table-inverse-color">#fff</xsl:variable>
   <xsl:variable name="bootstrap-table-striped-color">#c9d7e9</xsl:variable>
   <xsl:variable name="bootstrap-body-bg">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-body-color">#7b8ab8</xsl:variable>
