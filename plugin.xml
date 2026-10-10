@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://www.dita-ot.org/rng/plugin.rnc" type="application/relax-ng-compact-syntax"?>
-<plugin id="org.dita-bootstrap.pdf.theme">
+<plugin id="org.dita-bootstrap.pdf.theme" version="5.3.9">
   <require plugin="org.dita.pdf2"/>
   <require plugin="org.dita-bootstrap.pdf"/>
   <!--require plugin="org.dita-bootstrap.dtd"/-->
