@@ -10,17 +10,17 @@
 >
 
   <!-- PrismJS code block styling aligned with Yeti variables -->
-  <xsl:variable name="prismjs.text.color">#212529</xsl:variable>
-  <xsl:variable name="prismjs.comment.color">#585b5e</xsl:variable>
-  <xsl:variable name="prismjs.punctuation.color">#585b5e</xsl:variable>
-  <xsl:variable name="prismjs.namespace.color">#585b5e</xsl:variable>
-  <xsl:variable name="prismjs.tag.color">#c33476</xsl:variable>
-  <xsl:variable name="prismjs.string.color">#389059</xsl:variable>
-  <xsl:variable name="prismjs.keyword.color">#00769c</xsl:variable>
-  <xsl:variable name="prismjs.type.color">#ca371e</xsl:variable>
-  <xsl:variable name="prismjs.regex.color">#d56a11</xsl:variable>
-  <xsl:variable name="prismjs.deleted.color">#ca371e</xsl:variable>
-  <xsl:variable name="prismjs.url.color">#c47902</xsl:variable>
+  <xsl:variable name="prismjs.text.color">#222222</xsl:variable>
+  <xsl:variable name="prismjs.comment.color">#797f84</xsl:variable>
+  <xsl:variable name="prismjs.punctuation.color">#797f84</xsl:variable>
+  <xsl:variable name="prismjs.namespace.color">#797f84</xsl:variable>
+  <xsl:variable name="prismjs.tag.color">#a22b62</xsl:variable>
+  <xsl:variable name="prismjs.string.color">#2f784a</xsl:variable>
+  <xsl:variable name="prismjs.keyword.color">#006282</xsl:variable>
+  <xsl:variable name="prismjs.type.color">#a82d19</xsl:variable>
+  <xsl:variable name="prismjs.regex.color">#b1580e</xsl:variable>
+  <xsl:variable name="prismjs.deleted.color">#a82d19</xsl:variable>
+  <xsl:variable name="prismjs.url.color">#724701</xsl:variable>
 
   <xsl:variable name="prismjs.font-weight">normal</xsl:variable>
 

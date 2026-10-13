@@ -11,16 +11,16 @@
 
   <!-- PrismJS code block styling aligned with Quartz variables -->
   <xsl:variable name="prismjs.text.color">#ffffff</xsl:variable>
-  <xsl:variable name="prismjs.comment.color">#dadbed</xsl:variable>
-  <xsl:variable name="prismjs.punctuation.color">#dadbed</xsl:variable>
-  <xsl:variable name="prismjs.namespace.color">#dadbed</xsl:variable>
-  <xsl:variable name="prismjs.tag.color">#ed5b9c</xsl:variable>
-  <xsl:variable name="prismjs.string.color">#67dfb9</xsl:variable>
-  <xsl:variable name="prismjs.keyword.color">#61a5e1</xsl:variable>
-  <xsl:variable name="prismjs.type.color">#fd5d8c</xsl:variable>
-  <xsl:variable name="prismjs.regex.color">#fd9843</xsl:variable>
-  <xsl:variable name="prismjs.deleted.color">#fd5d8c</xsl:variable>
-  <xsl:variable name="prismjs.url.color">#ffcd39</xsl:variable>
+  <xsl:variable name="prismjs.comment.color">#d6dade</xsl:variable>
+  <xsl:variable name="prismjs.punctuation.color">#d6dade</xsl:variable>
+  <xsl:variable name="prismjs.namespace.color">#d6dade</xsl:variable>
+  <xsl:variable name="prismjs.tag.color">#f8c5dc</xsl:variable>
+  <xsl:variable name="prismjs.string.color">#a0ebd3</xsl:variable>
+  <xsl:variable name="prismjs.keyword.color">#b7d6f1</xsl:variable>
+  <xsl:variable name="prismjs.type.color">#fec2d4</xsl:variable>
+  <xsl:variable name="prismjs.regex.color">#fec89a</xsl:variable>
+  <xsl:variable name="prismjs.deleted.color">#fec2d4</xsl:variable>
+  <xsl:variable name="prismjs.url.color">#ffe083</xsl:variable>
 
   <xsl:variable name="prismjs.font-weight">normal</xsl:variable>
 

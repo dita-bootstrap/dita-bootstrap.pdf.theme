@@ -11,16 +11,16 @@
 
   <!-- PrismJS code block styling aligned with Materia variables -->
   <xsl:variable name="prismjs.text.color">#444444</xsl:variable>
-  <xsl:variable name="prismjs.comment.color">#737373</xsl:variable>
-  <xsl:variable name="prismjs.punctuation.color">#737373</xsl:variable>
-  <xsl:variable name="prismjs.namespace.color">#737373</xsl:variable>
-  <xsl:variable name="prismjs.tag.color">#c33476</xsl:variable>
-  <xsl:variable name="prismjs.string.color">#409343</xsl:variable>
-  <xsl:variable name="prismjs.keyword.color">#1c7ecc</xsl:variable>
-  <xsl:variable name="prismjs.type.color">#c0181d</xsl:variable>
-  <xsl:variable name="prismjs.regex.color">#d56a11</xsl:variable>
-  <xsl:variable name="prismjs.deleted.color">#c0181d</xsl:variable>
-  <xsl:variable name="prismjs.url.color">#d68000</xsl:variable>
+  <xsl:variable name="prismjs.comment.color">#838383</xsl:variable>
+  <xsl:variable name="prismjs.punctuation.color">#838383</xsl:variable>
+  <xsl:variable name="prismjs.namespace.color">#838383</xsl:variable>
+  <xsl:variable name="prismjs.tag.color">#a22b62</xsl:variable>
+  <xsl:variable name="prismjs.string.color">#357a38</xsl:variable>
+  <xsl:variable name="prismjs.keyword.color">#1769aa</xsl:variable>
+  <xsl:variable name="prismjs.type.color">#a01418</xsl:variable>
+  <xsl:variable name="prismjs.regex.color">#b1580e</xsl:variable>
+  <xsl:variable name="prismjs.deleted.color">#a01418</xsl:variable>
+  <xsl:variable name="prismjs.url.color">#7d4a00</xsl:variable>
 
   <xsl:variable name="prismjs.font-weight">normal</xsl:variable>
 
