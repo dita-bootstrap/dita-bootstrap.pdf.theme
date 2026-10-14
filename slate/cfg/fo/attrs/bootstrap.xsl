@@ -162,9 +162,10 @@
 
   <!-- Code colors -->
   <xsl:variable name="bootstrap-code-color">#e33954</xsl:variable>
-  <xsl:variable name="bootstrap-dita-violet">#6f42c1</xsl:variable>
   <xsl:variable name="bootstrap-surface-code-color">#f098a6</xsl:variable>
   <xsl:variable name="bootstrap-surface-xml-color">#bda8e2</xsl:variable>
   <xsl:variable name="bootstrap-surface-cmd-color">#9ab4de</xsl:variable>
   <xsl:variable name="bootstrap-dita-prussian-blue">#6a91cf</xsl:variable>
+  <xsl:variable name="bootstrap-dita-maroon">#9b3e3b</xsl:variable>
+  <xsl:variable name="bootstrap-dita-violet">#884f94</xsl:variable>
 </xsl:stylesheet>

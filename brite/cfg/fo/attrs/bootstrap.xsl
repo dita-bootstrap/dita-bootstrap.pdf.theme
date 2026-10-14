@@ -141,5 +141,7 @@
 
   <!-- Code colors -->
   <xsl:variable name="bootstrap-code-color">#ff744b</xsl:variable>
-  <xsl:variable name="bootstrap-dita-violet">#be82fa</xsl:variable>
+  <xsl:variable name="bootstrap-dita-prussian-blue">#577b1d</xsl:variable>
+  <xsl:variable name="bootstrap-dita-maroon">#9f4242</xsl:variable>
+  <xsl:variable name="bootstrap-dita-violet">#8e7236</xsl:variable>
 </xsl:stylesheet>
