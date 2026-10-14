@@ -122,6 +122,8 @@
   <xsl:variable name="bootstrap-table-inverse-bg">#e4e5e5</xsl:variable>
   <xsl:variable name="bootstrap-table-inverse-color">#15181b</xsl:variable>
   <xsl:variable name="bootstrap-table-striped-color">#c9d7e9</xsl:variable>
+  <xsl:variable name="bootstrap-glow-color">#6d7279</xsl:variable>
+  <xsl:variable name="bootstrap-glow-scope">surface</xsl:variable>
   <xsl:variable name="bootstrap-card-fill">#d9e3f1</xsl:variable>
   <xsl:variable name="bootstrap-body-bg">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-body-color">#7b8ab8</xsl:variable>
