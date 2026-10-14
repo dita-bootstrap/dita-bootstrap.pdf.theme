@@ -10,7 +10,7 @@
 >
 
   <!-- PrismJS code block styling aligned with Slate variables -->
-  <xsl:variable name="prismjs.text.color">#b6b6b6</xsl:variable>
+  <xsl:variable name="prismjs.text.color">#c9c9c9</xsl:variable>
   <xsl:variable name="prismjs.comment.color">#cccccc</xsl:variable>
   <xsl:variable name="prismjs.punctuation.color">#cccccc</xsl:variable>
   <xsl:variable name="prismjs.namespace.color">#cccccc</xsl:variable>

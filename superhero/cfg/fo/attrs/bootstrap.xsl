@@ -36,6 +36,27 @@
   <xsl:variable name="bootstrap-accent-border">#ac85e0</xsl:variable>
   <xsl:variable name="bootstrap-inverse-fg">#70777f</xsl:variable>
   <xsl:variable name="bootstrap-inverse-border">#4d5f6f</xsl:variable>
+  <xsl:variable name="bootstrap-surface-bg">#182d3f</xsl:variable>
+  <xsl:variable name="bootstrap-surface-header-bg">#253849</xsl:variable>
+  <xsl:variable name="bootstrap-surface-text">#ebebeb</xsl:variable>
+  <xsl:variable name="bootstrap-surface-border">#4e5d6c</xsl:variable>
+  <xsl:variable name="bootstrap-surface-primary-bg">#2e2f33</xsl:variable>
+  <xsl:variable name="bootstrap-surface-primary-color">#efb48c</xsl:variable>
+  <xsl:variable name="bootstrap-surface-secondary-bg">#182d3f</xsl:variable>
+  <xsl:variable name="bootstrap-surface-secondary-color">#a6aeb6</xsl:variable>
+  <xsl:variable name="bootstrap-surface-success-bg">#1b3b3d</xsl:variable>
+  <xsl:variable name="bootstrap-surface-success-color">#aedcae</xsl:variable>
+  <xsl:variable name="bootstrap-surface-info-bg">#1a3c50</xsl:variable>
+  <xsl:variable name="bootstrap-surface-info-color">#ade0ee</xsl:variable>
+  <xsl:variable name="bootstrap-surface-warning-bg">#333c30</xsl:variable>
+  <xsl:variable name="bootstrap-surface-warning-color">#ffe083</xsl:variable>
+  <xsl:variable name="bootstrap-surface-danger-bg">#2d2c3b</xsl:variable>
+  <xsl:variable name="bootstrap-surface-danger-color">#eca9a7</xsl:variable>
+  <xsl:variable name="bootstrap-surface-accent-bg">#273350</xsl:variable>
+  <xsl:variable name="bootstrap-surface-accent-color">#d6c2f0</xsl:variable>
+  <xsl:variable name="bootstrap-surface-inverse-bg">#263b4c</xsl:variable>
+  <xsl:variable name="bootstrap-surface-inverse-color">#d5dbe0</xsl:variable>
+
   <!-- Primary -->
   <xsl:variable name="bootstrap-primary">#df6919</xsl:variable>
   <xsl:variable name="bootstrap-badge-primary-bg" select="$bootstrap-primary"/>
@@ -125,7 +146,7 @@
   <xsl:variable name="bootstrap-body-bg">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-body-color">#20374c</xsl:variable>
   <xsl:variable name="bootstrap-border-color">#ced4da</xsl:variable>
-  <xsl:variable name="bootstrap-card-background-color">#0f2537</xsl:variable>
+  <xsl:variable name="bootstrap-card-background-color">#182d3f</xsl:variable>
   <xsl:variable name="bootstrap-card-border-color">#4e5d6c</xsl:variable>
   <xsl:variable name="bootstrap-rounded">0pt</xsl:variable>
 

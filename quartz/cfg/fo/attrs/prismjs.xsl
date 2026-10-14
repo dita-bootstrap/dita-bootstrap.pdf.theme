@@ -10,17 +10,20 @@
 >
 
   <!-- PrismJS code block styling aligned with Quartz variables -->
+  <xsl:variable name="prismjs.background.color">transparent</xsl:variable>
+  <xsl:variable name="prismjs.card.background.color" select="$bootstrap-surface-image-color"/>
+  <xsl:variable name="prismjs.border.color" select="$bootstrap-surface-image-border"/>
   <xsl:variable name="prismjs.text.color">#ffffff</xsl:variable>
   <xsl:variable name="prismjs.comment.color">#d6dade</xsl:variable>
   <xsl:variable name="prismjs.punctuation.color">#d6dade</xsl:variable>
   <xsl:variable name="prismjs.namespace.color">#d6dade</xsl:variable>
-  <xsl:variable name="prismjs.tag.color">#f8c5dc</xsl:variable>
-  <xsl:variable name="prismjs.string.color">#a0ebd3</xsl:variable>
-  <xsl:variable name="prismjs.keyword.color">#b7d6f1</xsl:variable>
-  <xsl:variable name="prismjs.type.color">#fec2d4</xsl:variable>
-  <xsl:variable name="prismjs.regex.color">#fec89a</xsl:variable>
-  <xsl:variable name="prismjs.deleted.color">#fec2d4</xsl:variable>
-  <xsl:variable name="prismjs.url.color">#ffe083</xsl:variable>
+  <xsl:variable name="prismjs.tag.color">#641538</xsl:variable>
+  <xsl:variable name="prismjs.string.color">#123b2d</xsl:variable>
+  <xsl:variable name="prismjs.keyword.color">#163653</xsl:variable>
+  <xsl:variable name="prismjs.type.color">#63142c</xsl:variable>
+  <xsl:variable name="prismjs.regex.color">#532907</xsl:variable>
+  <xsl:variable name="prismjs.deleted.color">#63142c</xsl:variable>
+  <xsl:variable name="prismjs.url.color">#413102</xsl:variable>
 
   <xsl:variable name="prismjs.font-weight">normal</xsl:variable>
 

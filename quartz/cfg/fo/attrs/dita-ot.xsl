@@ -28,6 +28,9 @@
     <xsl:attribute name="color"><xsl:value-of select="$prismjs.text.color"/></xsl:attribute>
     <xsl:attribute name="background-color"><xsl:value-of select="$prismjs.background.color"/></xsl:attribute>
   </xsl:attribute-set>
+  <xsl:attribute-set name="__codeph__language__" use-attribute-sets="codeph">
+    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-body-color"/></xsl:attribute>
+  </xsl:attribute-set>
   <xsl:attribute-set name="codeph">
     <xsl:attribute name="font-family"><xsl:value-of select="$monospaced-font-family"/></xsl:attribute>
   </xsl:attribute-set>

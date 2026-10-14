@@ -6,5 +6,9 @@
   <uri name="cfg:fo/attrs/dita-ot.xsl" uri="fo/attrs/dita-ot.xsl"/>
   <uri name="cfg:fo/xsl/custom.xsl" uri="fo/xsl/custom.xsl"/>
   <uri name="cfg:fo/xsl/tables.xsl" uri="fo/xsl/tables.xsl"/>
+  <uri
+    name="cfg:fo/images/quartz-gradient.png"
+    uri="fo/images/quartz-gradient.png"
+  />
   <uri name="cfg:fo/font-mappings.xml" uri="fo/font-mappings.xml"/>
 </catalog>
