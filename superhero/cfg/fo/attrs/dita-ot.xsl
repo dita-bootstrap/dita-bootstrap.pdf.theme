@@ -6,6 +6,8 @@
 <xsl:stylesheet
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
+  xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot"
+  exclude-result-prefixes="dita-ot"
   version="2.0"
 >
 
@@ -29,7 +31,9 @@
     <xsl:attribute name="background-color"><xsl:value-of select="$prismjs.background.color"/></xsl:attribute>
   </xsl:attribute-set>
   <xsl:attribute-set name="__codeph__language__" use-attribute-sets="codeph">
-    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-body-color"/></xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of
+        select="if (dita-ot:on-solid-alert(.)) then 'inherit' else if (dita-ot:on-surface(.)) then (if (string($bootstrap-surface-text) != '') then $bootstrap-surface-text else $bootstrap-surface-image-text) else $bootstrap-body-color"
+      /></xsl:attribute>
   </xsl:attribute-set>
   <xsl:attribute-set name="codeph">
     <xsl:attribute name="font-family"><xsl:value-of select="$monospaced-font-family"/></xsl:attribute>

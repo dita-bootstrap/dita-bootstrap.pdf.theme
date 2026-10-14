@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        theme: [cerulean, cosmo, cyborg, darkly, flatly, journal]
+        theme: [default, cyborg, vapor, quartz, pulse, flatly]
     steps:
       - name: Git checkout
         uses: actions/checkout@v7

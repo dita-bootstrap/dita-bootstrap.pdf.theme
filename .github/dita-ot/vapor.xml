@@ -13,8 +13,8 @@
     <publication transtype="pdf-bootstrap">
       <param name="args.rellinks" value="none"/>
       <param name="processing-mode" value="strict"/>
-      <param name="bootstrap.theme" value="darkly"/>
-      <param name="outputFile.base" value="darkly"/>
+      <param name="bootstrap.theme" value="vapor"/>
+      <param name="outputFile.base" value="vapor"/>
     </publication>
   </deliverable>
 </project>
