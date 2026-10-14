@@ -12,7 +12,7 @@
   version="2.0"
 >
 
-  <!-- Table Header Row Styling - SUPERHERO SUBTLE OVERRIDE -->
+  <!-- Table Header Row Styling - SUPERHERO OVERRIDE -->
   <xsl:template match="*[contains(@class, ' topic/thead ')]/*[contains(@class, ' topic/row ')]" priority="10">
     <fo:table-row xsl:use-attribute-sets="thead.row">
       <xsl:call-template name="commonattributes"/>
@@ -24,7 +24,7 @@
 
       <xsl:if test="$theme">
         <xsl:call-template name="processBootstrapAttrSetReflection">
-          <xsl:with-param name="attrSet" select="concat('__bg__', $theme, '-subtle')"/>
+          <xsl:with-param name="attrSet" select="concat('__table__', $theme)"/>
         </xsl:call-template>
       </xsl:if>
 
@@ -32,7 +32,7 @@
     </fo:table-row>
   </xsl:template>
 
-  <!-- Table Body Row Styling - SUPERHERO SUBTLE OVERRIDE -->
+  <!-- Table Body Row Styling - SUPERHERO OVERRIDE -->
   <xsl:template match="*[contains(@class, ' topic/tbody ')]/*[contains(@class, ' topic/row ')]" priority="10">
     <fo:table-row xsl:use-attribute-sets="tbody.row">
       <xsl:call-template name="commonattributes"/>
@@ -46,10 +46,10 @@
       <xsl:variable name="isColoredRow" select="not($striped) or ($rowIndex mod 2 = 0)"/>
       
       <xsl:choose>
-        <!-- Row-specific color always wins - SUPERHERO: USE SUBTLE -->
+        <!-- Row-specific color always wins -->
         <xsl:when test="$rowTheme">
           <xsl:call-template name="processBootstrapAttrSetReflection">
-            <xsl:with-param name="attrSet" select="concat('__bg__', $rowTheme, '-subtle')"/>
+            <xsl:with-param name="attrSet" select="concat('__table__', $rowTheme)"/>
           </xsl:call-template>
         </xsl:when>
         <!-- Table-level color or row-striping -->
@@ -57,7 +57,7 @@
           <xsl:choose>
             <xsl:when test="$tableTheme">
               <xsl:call-template name="processBootstrapAttrSetReflection">
-                <xsl:with-param name="attrSet" select="concat('__bg__', $tableTheme, '-subtle')"/>
+                <xsl:with-param name="attrSet" select="concat('__table__', $tableTheme)"/>
               </xsl:call-template>
             </xsl:when>
             <xsl:when test="$striped">
@@ -73,7 +73,7 @@
     </fo:table-row>
   </xsl:template>
 
-  <!-- Entry styling - SUPERHERO SUBTLE OVERRIDE for cell colors -->
+  <!-- Entry styling - SUPERHERO OVERRIDE for striped columns -->
   <xsl:template match="*[contains(@class, ' topic/entry ')]" priority="10">
     <xsl:variable
       name="isHeader"
@@ -152,18 +152,18 @@
         <xsl:attribute name="border-top-width">2pt</xsl:attribute>
       </xsl:if>
       
-      <!-- Cell-level themed color or striping - SUPERHERO: USE SUBTLE -->
+      <!-- Cell-level themed color or striping -->
       <xsl:choose>
         <xsl:when test="@theme">
            <xsl:call-template name="processBootstrapAttrSetReflection">
-             <xsl:with-param name="attrSet" select="concat('__bg__', @theme, '-subtle')"/>
+             <xsl:with-param name="attrSet" select="concat('__table__', @theme)"/>
            </xsl:call-template>
         </xsl:when>
         <xsl:when test="$isColoredCol">
            <xsl:choose>
             <xsl:when test="$tableTheme">
               <xsl:call-template name="processBootstrapAttrSetReflection">
-                <xsl:with-param name="attrSet" select="concat('__bg__', $tableTheme, '-subtle')"/>
+                <xsl:with-param name="attrSet" select="concat('__table__', $tableTheme)"/>
               </xsl:call-template>
             </xsl:when>
             <xsl:otherwise>
