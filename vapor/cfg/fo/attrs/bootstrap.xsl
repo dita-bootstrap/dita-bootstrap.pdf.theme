@@ -37,6 +37,8 @@
   <xsl:variable name="bootstrap-surface-bg">#391047</xsl:variable>
   <xsl:variable name="bootstrap-surface-header-bg">#391e50</xsl:variable>
   <xsl:variable name="bootstrap-surface-text">#32fbe2</xsl:variable>
+  <xsl:variable name="bootstrap-surface-heading-color">#ffffff</xsl:variable>
+  <xsl:variable name="bootstrap-glow-color">#ea39b8</xsl:variable>
   <xsl:variable name="bootstrap-surface-border">#ea39b8</xsl:variable>
   <xsl:variable name="bootstrap-surface-primary-bg">#271248</xsl:variable>
   <xsl:variable name="bootstrap-surface-primary-color">#b7a0e0</xsl:variable>
