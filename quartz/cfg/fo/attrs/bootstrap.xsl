@@ -157,4 +157,6 @@
   <xsl:variable name="bootstrap-surface-code-color">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-surface-xml-color">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-surface-cmd-color">#ffffff</xsl:variable>
+
+  <xsl:variable name="bootstrap-surface-accordion-header-bg" select="$bootstrap-primary"/>
 </xsl:stylesheet>

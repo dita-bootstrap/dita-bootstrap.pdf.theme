@@ -168,4 +168,6 @@
   <xsl:variable name="bootstrap-dita-prussian-blue">#6a91cf</xsl:variable>
   <xsl:variable name="bootstrap-dita-maroon">#8d3633</xsl:variable>
   <xsl:variable name="bootstrap-dita-violet">#8768b0</xsl:variable>
+
+  <xsl:variable name="bootstrap-surface-accordion-header-bg" select="$bootstrap-primary"/>
 </xsl:stylesheet>

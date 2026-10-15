@@ -142,4 +142,6 @@
   <xsl:variable name="bootstrap-dita-prussian-blue">#08384A</xsl:variable>
   <xsl:variable name="bootstrap-dita-maroon">#8d3633</xsl:variable>
   <xsl:variable name="bootstrap-dita-violet">#8b6799</xsl:variable>
+
+  <xsl:variable name="bootstrap-fs-base">13.2pt</xsl:variable>
 </xsl:stylesheet>

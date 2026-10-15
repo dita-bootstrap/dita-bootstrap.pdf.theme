@@ -168,4 +168,6 @@
   <xsl:variable name="bootstrap-dita-prussian-blue">#6a91cf</xsl:variable>
   <xsl:variable name="bootstrap-dita-maroon">#943137</xsl:variable>
   <xsl:variable name="bootstrap-dita-violet">#8f3c75</xsl:variable>
+
+  <xsl:variable name="bootstrap-alert-solid" select="true()"/>
 </xsl:stylesheet>

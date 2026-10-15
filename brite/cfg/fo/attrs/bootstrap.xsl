@@ -144,4 +144,8 @@
   <xsl:variable name="bootstrap-dita-prussian-blue">#577b1d</xsl:variable>
   <xsl:variable name="bootstrap-dita-maroon">#9f4242</xsl:variable>
   <xsl:variable name="bootstrap-dita-violet">#8e7236</xsl:variable>
+
+  <xsl:variable name="bootstrap-accordion-active-bg" select="$bootstrap-primary"/>
+  <xsl:variable name="bootstrap-accordion-active-color">#000000</xsl:variable>
+  <xsl:variable name="bootstrap-fs-base">10.5pt</xsl:variable>
 </xsl:stylesheet>
