@@ -39,6 +39,56 @@
       <val>yeti</val>
       <val>zephyr</val>
     </param>
+    <param
+      name="bootstrap.css.card"
+      type="string"
+      desc="Common Bootstrap utility classes for Bootstrap cards"
+    />
+    <param
+      name="bootstrap.css.codeblock"
+      type="string"
+      desc="Common Bootstrap utility classes for DITA &lt;codeblock&gt; elements"
+    />
+    <param
+      name="bootstrap.css.example"
+      type="string"
+      desc="Common Bootstrap utility classes for DITA &lt;example&gt; elements"
+    />
+    <param
+      name="bootstrap.css.figure"
+      type="string"
+      desc="Common Bootstrap utility classes for DITA &lt;fig&gt; elements"
+    />
+    <param
+      name="bootstrap.css.figure.caption"
+      type="string"
+      desc="Common Bootstrap utility classes for DITA &lt;title&gt; elements within &lt;fig&gt; elements"
+    />
+    <param
+      name="bootstrap.css.figure.image"
+      type="string"
+      desc="Common Bootstrap utility classes for DITA &lt;image&gt; elements within &lt;fig&gt; elements"
+    />
+    <param
+      name="bootstrap.css.section.title"
+      type="string"
+      desc="Common Bootstrap utility classes for DITA &lt;title&gt; elements within &lt;section&gt; elements"
+    />
+    <param
+      name="bootstrap.css.shortdesc"
+      type="string"
+      desc="Common Bootstrap utility classes for DITA &lt;shortdesc&gt; elements"
+    />
+    <param
+      name="bootstrap.css.table"
+      type="string"
+      desc="Common Bootstrap utility classes for DITA &lt;table&gt; elements"
+    />
+    <param
+      name="bootstrap.css.thead"
+      type="string"
+      desc="Common Bootstrap utility classes for DITA &lt;thead&gt; elements"
+    />
   </transtype>
   <feature extension="dita.transtype.print" value="pdf-bootstrap"/>
   <feature extension="ant.import" file="integrator.xml"/>

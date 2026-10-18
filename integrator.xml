@@ -1,11 +1,101 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<project>
+<project xmlns:if="ant:if">
   <!-- Main target for bootstrap-pdf transtype -->
   <target
     name="dita2pdf-bootstrap"
     depends="dita2pdf-bootstrap.init,
-                dita2pdf2"
+                dita2pdf2.init,
+                build-init,
+                preprocess2,
+                dita2pdf-bootstrap.css,
+                map2pdf2,
+                topic2pdf2"
   />
+
+  <target name="dita2pdf-bootstrap.css.check">
+    <condition property="bootstrap.css.present">
+      <or>
+        <isset property="bootstrap.css.card"/>
+        <isset property="bootstrap.css.codeblock"/>
+        <isset property="bootstrap.css.example"/>
+        <isset property="bootstrap.css.figure"/>
+        <isset property="bootstrap.css.figure.caption"/>
+        <isset property="bootstrap.css.figure.image"/>
+        <isset property="bootstrap.css.section.title"/>
+        <isset property="bootstrap.css.shortdesc"/>
+        <isset property="bootstrap.css.table"/>
+        <isset property="bootstrap.css.thead"/>
+      </or>
+    </condition>
+  </target>
+
+  <target
+    name="dita2pdf-bootstrap.css"
+    depends="dita2pdf-bootstrap.css.check"
+    if="bootstrap.css.present"
+  >
+    <pipeline
+      message="Apply Bootstrap utility classes"
+      taskname="bootstrap-css"
+    >
+      <xslt
+        basedir="${dita.temp.dir}"
+        style="${dita.plugin.org.dita-bootstrap.pdf.theme.dir}/xsl/apply-css-classes.xsl"
+      >
+        <ditafileset format="dita" processingRole="normal"/>
+        <param
+          name="css-card"
+          expression="${bootstrap.css.card}"
+          if:set="bootstrap.css.card"
+        />
+        <param
+          name="css-codeblock"
+          expression="${bootstrap.css.codeblock}"
+          if:set="bootstrap.css.codeblock"
+        />
+        <param
+          name="css-example"
+          expression="${bootstrap.css.example}"
+          if:set="bootstrap.css.example"
+        />
+        <param
+          name="css-figure"
+          expression="${bootstrap.css.figure}"
+          if:set="bootstrap.css.figure"
+        />
+        <param
+          name="css-figure-caption"
+          expression="${bootstrap.css.figure.caption}"
+          if:set="bootstrap.css.figure.caption"
+        />
+        <param
+          name="css-figure-image"
+          expression="${bootstrap.css.figure.image}"
+          if:set="bootstrap.css.figure.image"
+        />
+        <param
+          name="css-section-title"
+          expression="${bootstrap.css.section.title}"
+          if:set="bootstrap.css.section.title"
+        />
+        <param
+          name="css-shortdesc"
+          expression="${bootstrap.css.shortdesc}"
+          if:set="bootstrap.css.shortdesc"
+        />
+        <param
+          name="css-table"
+          expression="${bootstrap.css.table}"
+          if:set="bootstrap.css.table"
+        />
+        <param
+          name="css-thead"
+          expression="${bootstrap.css.thead}"
+          if:set="bootstrap.css.thead"
+        />
+      </xslt>
+    </pipeline>
+  </target>
 
   <target name="dita2pdf-bootstrap.init">
     <!-- Set default theme to 'default' if not already set -->
