@@ -149,4 +149,5 @@
   <xsl:variable name="bootstrap-dita-prussian-blue">#08384A</xsl:variable>
   <xsl:variable name="bootstrap-dita-maroon">#a62a23</xsl:variable>
   <xsl:variable name="bootstrap-dita-violet">#99466f</xsl:variable>
+  <xsl:variable name="bootstrap-btn-font-weight">700</xsl:variable>
 </xsl:stylesheet>

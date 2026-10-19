@@ -144,4 +144,5 @@
   <xsl:variable name="bootstrap-dita-violet">#8b6799</xsl:variable>
 
   <xsl:variable name="bootstrap-fs-base">13.2pt</xsl:variable>
+  <xsl:variable name="bootstrap-badge-font-weight">400</xsl:variable>
 </xsl:stylesheet>

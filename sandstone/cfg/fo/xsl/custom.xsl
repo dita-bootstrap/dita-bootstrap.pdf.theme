@@ -30,9 +30,7 @@
   </xsl:template>
 
   <xsl:template
-    match="*[contains(@class, ' bootstrap-d/button ') or (exists(tokenize(@outputclass, ' ')[starts-with(., 'btn')]) and (contains(@class, ' topic/xref ') or contains(@class, ' topic/ph ')))
-      or contains(@class, ' bootstrap-d/badge ') or (contains(@class, ' topic/ph ') and contains(@outputclass, 'badge'))
-      or contains(@class, ' bootstrap-d/card-header ') or self::card-header]"
+    match="*[contains(@class, ' bootstrap-d/button ') or (exists(tokenize(@outputclass, ' ')[starts-with(., 'btn')]) and (contains(@class, ' topic/xref ') or contains(@class, ' topic/ph ')))]"
     priority="25"
   >
     <xsl:variable name="result">

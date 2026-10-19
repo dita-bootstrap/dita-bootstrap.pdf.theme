@@ -27,4 +27,24 @@
       <xsl:with-param name="defaultRounded" select="$defaultRounded"/>
     </xsl:next-match>
   </xsl:template>
+
+  <xsl:template match="@*|node()" mode="lux-caps">
+    <xsl:copy>
+      <xsl:apply-templates select="@*|node()" mode="lux-caps"/>
+    </xsl:copy>
+  </xsl:template>
+
+  <xsl:template match="text()" mode="lux-caps" priority="1">
+    <xsl:value-of select="upper-case(.)"/>
+  </xsl:template>
+
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/button ') or (exists(tokenize(@outputclass, ' ')[starts-with(., 'btn')]) and (contains(@class, ' topic/xref ') or contains(@class, ' topic/ph ')))]"
+    priority="25"
+  >
+    <xsl:variable name="result">
+      <xsl:next-match/>
+    </xsl:variable>
+    <xsl:apply-templates select="$result" mode="lux-caps"/>
+  </xsl:template>
 </xsl:stylesheet>
