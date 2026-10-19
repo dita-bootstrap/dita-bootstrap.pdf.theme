@@ -120,4 +120,24 @@
       <xsl:apply-templates/>
     </fo:block>
   </xsl:template>
+
+  <xsl:template match="@*|node()" mode="lumen-caps">
+    <xsl:copy>
+      <xsl:apply-templates select="@*|node()" mode="lumen-caps"/>
+    </xsl:copy>
+  </xsl:template>
+
+  <xsl:template match="text()" mode="lumen-caps" priority="1">
+    <xsl:value-of select="upper-case(.)"/>
+  </xsl:template>
+
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/button ') or (exists(tokenize(@outputclass, ' ')[starts-with(., 'btn')]) and (contains(@class, ' topic/xref ') or contains(@class, ' topic/ph ')))]"
+    priority="25"
+  >
+    <xsl:variable name="result">
+      <xsl:next-match/>
+    </xsl:variable>
+    <xsl:apply-templates select="$result" mode="lumen-caps"/>
+  </xsl:template>
 </xsl:stylesheet>
