@@ -81,9 +81,9 @@
   <!-- Warning -->
   <xsl:variable name="bootstrap-warning">#d9831f</xsl:variable>
   <xsl:variable name="bootstrap-badge-warning-bg" select="$bootstrap-warning"/>
-  <xsl:variable name="bootstrap-badge-warning-color">#212529</xsl:variable>
+  <xsl:variable name="bootstrap-badge-warning-color">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-btn-warning-bg">#d9831f</xsl:variable>
-  <xsl:variable name="bootstrap-btn-warning-color">#212529</xsl:variable>
+  <xsl:variable name="bootstrap-btn-warning-color">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-warning-subtle">#f9ecdd</xsl:variable>
   <xsl:variable name="bootstrap-warning-subtle-text">#8d5514</xsl:variable>
   <xsl:variable name="bootstrap-table-warning-bg">#f9ecdd</xsl:variable>

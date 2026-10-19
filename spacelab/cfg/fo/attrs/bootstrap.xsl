@@ -49,9 +49,9 @@
   <!-- Secondary -->
   <xsl:variable name="bootstrap-secondary">#999999</xsl:variable>
   <xsl:variable name="bootstrap-badge-secondary-bg" select="$bootstrap-secondary"/>
-  <xsl:variable name="bootstrap-badge-secondary-color">#212529</xsl:variable>
+  <xsl:variable name="bootstrap-badge-secondary-color">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-btn-secondary-bg">#999999</xsl:variable>
-  <xsl:variable name="bootstrap-btn-secondary-color">#212529</xsl:variable>
+  <xsl:variable name="bootstrap-btn-secondary-color">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-secondary-subtle">#f0f0f0</xsl:variable>
   <xsl:variable name="bootstrap-secondary-subtle-text">#636363</xsl:variable>
   <xsl:variable name="bootstrap-table-secondary-bg">#f0f0f0</xsl:variable>
@@ -60,9 +60,9 @@
   <!-- Success -->
   <xsl:variable name="bootstrap-success">#3cb521</xsl:variable>
   <xsl:variable name="bootstrap-badge-success-bg" select="$bootstrap-success"/>
-  <xsl:variable name="bootstrap-badge-success-color">#212529</xsl:variable>
+  <xsl:variable name="bootstrap-badge-success-color">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-btn-success-bg">#3cb521</xsl:variable>
-  <xsl:variable name="bootstrap-btn-success-color">#212529</xsl:variable>
+  <xsl:variable name="bootstrap-btn-success-color">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-success-subtle">#e2f4de</xsl:variable>
   <xsl:variable name="bootstrap-success-subtle-text">#277615</xsl:variable>
   <xsl:variable name="bootstrap-table-success-bg">#e2f4de</xsl:variable>

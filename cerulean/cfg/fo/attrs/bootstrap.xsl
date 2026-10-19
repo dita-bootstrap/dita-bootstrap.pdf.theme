@@ -38,9 +38,9 @@
   <!-- Primary -->
   <xsl:variable name="bootstrap-primary">#2fa4e7</xsl:variable>
   <xsl:variable name="bootstrap-badge-primary-bg" select="$bootstrap-primary"/>
-  <xsl:variable name="bootstrap-badge-primary-color">#212529</xsl:variable>
+  <xsl:variable name="bootstrap-badge-primary-color">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-btn-primary-bg">#2fa4e7</xsl:variable>
-  <xsl:variable name="bootstrap-btn-primary-color">#212529</xsl:variable>
+  <xsl:variable name="bootstrap-btn-primary-color">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-primary-subtle">#e0f1fb</xsl:variable>
   <xsl:variable name="bootstrap-primary-subtle-text">#1f6b96</xsl:variable>
   <xsl:variable name="bootstrap-table-primary-bg">#e0f1fb</xsl:variable>

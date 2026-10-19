@@ -60,9 +60,9 @@
   <!-- Success -->
   <xsl:variable name="bootstrap-success">#4bbf73</xsl:variable>
   <xsl:variable name="bootstrap-badge-success-bg" select="$bootstrap-success"/>
-  <xsl:variable name="bootstrap-badge-success-color">#212529</xsl:variable>
+  <xsl:variable name="bootstrap-badge-success-color">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-btn-success-bg">#4bbf73</xsl:variable>
-  <xsl:variable name="bootstrap-btn-success-color">#212529</xsl:variable>
+  <xsl:variable name="bootstrap-btn-success-color">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-success-subtle">#e4f5ea</xsl:variable>
   <xsl:variable name="bootstrap-success-subtle-text">#317c4b</xsl:variable>
   <xsl:variable name="bootstrap-table-success-bg">#e4f5ea</xsl:variable>

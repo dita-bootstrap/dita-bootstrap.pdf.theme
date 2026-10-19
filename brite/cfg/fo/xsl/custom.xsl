@@ -35,18 +35,17 @@
     <xsl:param name="theme" select="''"/>
     <xsl:param name="prefix" select="''"/>
     <xsl:param name="defaultRounded" select="false()"/>
-    <xsl:attribute name="border-style">solid</xsl:attribute>
-    <xsl:attribute name="border-color">#000000</xsl:attribute>
-    <xsl:attribute name="border-bottom-width">4.25pt</xsl:attribute>
-    <xsl:attribute name="border-right-width">4.25pt</xsl:attribute>
-    <!-- Neo-Brutalist Hard Shadow Simulation via Thick Black Borders (3px offset) -->
-    <!-- 2pt base + 2.25pt (3px) = 4.25pt -->
     <xsl:next-match>
       <xsl:with-param name="variant" select="$variant"/>
       <xsl:with-param name="theme" select="$theme"/>
       <xsl:with-param name="prefix" select="$prefix"/>
       <xsl:with-param name="defaultRounded" select="$defaultRounded"/>
     </xsl:next-match>
+    <xsl:attribute name="border-style">solid</xsl:attribute>
+    <xsl:attribute name="border-color">#000000</xsl:attribute>
+    <xsl:attribute name="border-width"><xsl:value-of select="$bootstrap-border-width"/></xsl:attribute>
+    <xsl:attribute name="border-bottom-width">4.25pt</xsl:attribute>
+    <xsl:attribute name="border-right-width">4.25pt</xsl:attribute>
   </xsl:template>
 
   <!-- Brite buttons: black border with hard shadow; outline renders as filled -->
@@ -83,7 +82,7 @@
     </xsl:copy>
   </xsl:template>
 
-  <xsl:template match="fo:inline[@border-style = 'solid']" mode="brite-button">
+  <xsl:template match="fo:inline[@border-style = ('solid', 'none')][@padding]" mode="brite-button">
     <xsl:param name="filled"/>
     <xsl:param name="base"/>
     <xsl:copy>
@@ -100,11 +99,31 @@
           </xsl:call-template>
         </xsl:attribute>
       </xsl:if>
+      <xsl:attribute name="border-style">solid</xsl:attribute>
       <xsl:attribute name="border-color">#000000</xsl:attribute>
+      <xsl:attribute name="border-width"><xsl:value-of select="$bootstrap-border-width"/></xsl:attribute>
       <xsl:attribute name="border-bottom-width">4.25pt</xsl:attribute>
       <xsl:attribute name="border-right-width">4.25pt</xsl:attribute>
       <xsl:apply-templates select="node()" mode="brite-button"/>
     </xsl:copy>
+  </xsl:template>
+
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/badge ') or (contains(@class, ' topic/ph ') and contains(@outputclass, 'badge'))]"
+    priority="25"
+  >
+    <xsl:variable name="result">
+      <xsl:next-match/>
+    </xsl:variable>
+    <xsl:for-each select="$result/fo:inline">
+      <xsl:copy>
+        <xsl:copy-of select="@* except (@border-style | @border-color | @border-width)"/>
+        <xsl:attribute name="border-style">solid</xsl:attribute>
+        <xsl:attribute name="border-color">#000000</xsl:attribute>
+        <xsl:attribute name="border-width">1pt</xsl:attribute>
+        <xsl:copy-of select="node()"/>
+      </xsl:copy>
+    </xsl:for-each>
   </xsl:template>
 
 </xsl:stylesheet>

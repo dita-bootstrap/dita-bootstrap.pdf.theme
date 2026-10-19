@@ -18,4 +18,26 @@
     </xsl:call-template>
     <xsl:attribute name="padding"><xsl:value-of select="$bootstrap-spacing-1"/></xsl:attribute>
   </xsl:template>
+
+  <xsl:template match="@*|node()" mode="sandstone-caps">
+    <xsl:copy>
+      <xsl:apply-templates select="@*|node()" mode="sandstone-caps"/>
+    </xsl:copy>
+  </xsl:template>
+
+  <xsl:template match="text()" mode="sandstone-caps" priority="1">
+    <xsl:value-of select="upper-case(.)"/>
+  </xsl:template>
+
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/button ') or (exists(tokenize(@outputclass, ' ')[starts-with(., 'btn')]) and (contains(@class, ' topic/xref ') or contains(@class, ' topic/ph ')))
+      or contains(@class, ' bootstrap-d/badge ') or (contains(@class, ' topic/ph ') and contains(@outputclass, 'badge'))
+      or contains(@class, ' bootstrap-d/card-header ') or self::card-header]"
+    priority="25"
+  >
+    <xsl:variable name="result">
+      <xsl:next-match/>
+    </xsl:variable>
+    <xsl:apply-templates select="$result" mode="sandstone-caps"/>
+  </xsl:template>
 </xsl:stylesheet>
