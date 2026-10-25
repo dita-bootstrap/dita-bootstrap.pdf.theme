@@ -105,7 +105,7 @@
   <xsl:variable name="bootstrap-body-color">#17141f</xsl:variable>
   <xsl:variable name="bootstrap-border-color">rgba(255, 255, 255, 0.2)</xsl:variable>
   <!-- Quartz rounded corners -->
-  <xsl:variable name="bootstrap-rounded">4pt</xsl:variable>
+  <xsl:variable name="bootstrap-rounded">6pt</xsl:variable>
 
   <!-- Heading Font Sizes -->
   <xsl:variable name="bootstrap-h1-font-size">30pt</xsl:variable>
@@ -126,4 +126,12 @@
   <xsl:variable name="bootstrap-danger-border">#fd7e14</xsl:variable>
   <xsl:variable name="bootstrap-warning-border">#ffc107</xsl:variable>
   <xsl:variable name="bootstrap-info-border">#39cbfb</xsl:variable>
+  <xsl:variable
+    name="bootstrap-surface-image"
+    select="resolve-uri('../images/quartz-gradient.png', base-uri(document('cfg:fo/attrs/custom.xsl')))"
+  />
+  <xsl:variable name="bootstrap-surface-image-color">#e35996</xsl:variable>
+  <xsl:variable name="bootstrap-surface-image-border">#b4b6dc</xsl:variable>
+  <xsl:variable name="bootstrap-surface-image-text">#ffffff</xsl:variable>
+  <xsl:variable name="bootstrap-surface-image-bar-factor" select="0.72"/>
 </xsl:stylesheet>
