@@ -15,4 +15,42 @@
     </xsl:call-template>
     <xsl:attribute name="padding"><xsl:value-of select="$bootstrap-spacing-1"/></xsl:attribute>
   </xsl:template>
+
+  <xsl:template match="@*|node()" mode="sandstone-caps">
+    <xsl:copy>
+      <xsl:apply-templates select="@*|node()" mode="sandstone-caps"/>
+    </xsl:copy>
+  </xsl:template>
+
+  <xsl:template match="text()" mode="sandstone-caps" priority="1">
+    <xsl:value-of select="upper-case(.)"/>
+  </xsl:template>
+
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/button ') or (exists(tokenize(@outputclass, ' ')[starts-with(., 'btn')]) and (contains(@class, ' topic/xref ') or contains(@class, ' topic/ph ')))]"
+    priority="25"
+  >
+    <xsl:variable name="result">
+      <xsl:next-match/>
+    </xsl:variable>
+    <xsl:apply-templates select="$result" mode="sandstone-caps"/>
+  </xsl:template>
+
+
+  <xsl:template
+    match="*[contains(@class, ' topic/note ') or contains(@class, ' bootstrap-d/alert ') or exists(tokenize(@outputclass, ' ')[starts-with(., 'alert-')])]"
+    mode="bootstrapDecoration"
+    priority="30"
+  >
+    <xsl:param name="variant" select="''"/>
+    <xsl:param name="theme" select="''"/>
+    <xsl:param name="prefix" select="''"/>
+    <xsl:param name="defaultRounded" select="false()"/>
+    <xsl:next-match>
+      <xsl:with-param name="variant" select="''"/>
+      <xsl:with-param name="theme" select="$theme"/>
+      <xsl:with-param name="prefix" select="$prefix"/>
+      <xsl:with-param name="defaultRounded" select="$defaultRounded"/>
+    </xsl:next-match>
+  </xsl:template>
 </xsl:stylesheet>

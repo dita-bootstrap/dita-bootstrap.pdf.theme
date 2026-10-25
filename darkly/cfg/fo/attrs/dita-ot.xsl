@@ -28,4 +28,161 @@
     <xsl:attribute name="font-family"><xsl:value-of select="$monospaced-font-family"/></xsl:attribute>
   </xsl:attribute-set>
 
+  <xsl:attribute-set name="thead.row">
+    <xsl:attribute name="background-color">#303030</xsl:attribute>
+    <xsl:attribute name="color">#ffffff</xsl:attribute>
+  </xsl:attribute-set>
+  <xsl:attribute-set name="thead.row.entry">
+  </xsl:attribute-set>
+  <xsl:attribute-set name="thead.row.entry__content">
+  </xsl:attribute-set>
+
+  <xsl:attribute-set name="tbody.row">
+    <xsl:attribute name="background-color">#222222</xsl:attribute>
+    <xsl:attribute name="color">#ffffff</xsl:attribute>
+  </xsl:attribute-set>
+  <xsl:attribute-set name="tbody.row.entry">
+  </xsl:attribute-set>
+  <xsl:attribute-set name="tbody.row.entry__content">
+  </xsl:attribute-set>
+
+  <!-- 1. Suppress Outer Table Frame Entirely -->
+  <xsl:attribute-set name="table.tgroup">
+    <xsl:attribute name="border-style">none</xsl:attribute>
+    <xsl:attribute name="border-width">0pt</xsl:attribute>
+    <xsl:attribute name="border-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-before-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-after-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-start-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-end-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-top-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-bottom-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-left-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-right-color">#444444</xsl:attribute>
+  </xsl:attribute-set>
+
+  <xsl:attribute-set name="table__tableframe__all">
+    <xsl:attribute name="border-style">none</xsl:attribute>
+    <xsl:attribute name="border-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-before-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-after-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-start-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-end-color">#444444</xsl:attribute>
+  </xsl:attribute-set>
+  <xsl:attribute-set name="table__tableframe__topbot">
+    <xsl:attribute name="border-style">none</xsl:attribute>
+    <xsl:attribute name="border-before-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-after-color">#444444</xsl:attribute>
+  </xsl:attribute-set>
+  <xsl:attribute-set name="table__tableframe__sides">
+    <xsl:attribute name="border-style">none</xsl:attribute>
+    <xsl:attribute name="border-start-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-end-color">#444444</xsl:attribute>
+  </xsl:attribute-set>
+  <xsl:attribute-set name="table__tableframe__top">
+    <xsl:attribute name="border-style">none</xsl:attribute>
+    <xsl:attribute name="border-before-color">#444444</xsl:attribute>
+  </xsl:attribute-set>
+  <xsl:attribute-set name="table__tableframe__bottom">
+    <xsl:attribute name="border-style">none</xsl:attribute>
+    <xsl:attribute name="border-after-color">#444444</xsl:attribute>
+  </xsl:attribute-set>
+  <xsl:attribute-set name="table__tableframe__left">
+    <xsl:attribute name="border-style">none</xsl:attribute>
+    <xsl:attribute name="border-start-color">#444444</xsl:attribute>
+  </xsl:attribute-set>
+  <xsl:attribute-set name="table__tableframe__right">
+    <xsl:attribute name="border-style">none</xsl:attribute>
+    <xsl:attribute name="border-end-color">#444444</xsl:attribute>
+  </xsl:attribute-set>
+
+  <!-- 2. Force Internal Dividers to Theme Color -->
+  <xsl:attribute-set name="thead.row.entry">
+    <xsl:attribute name="border-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-top-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-bottom-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-left-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-right-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-before-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-after-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-start-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-end-color">#444444</xsl:attribute>
+  </xsl:attribute-set>
+
+  <xsl:attribute-set name="tbody.row.entry">
+    <xsl:attribute name="border-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-top-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-bottom-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-left-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-right-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-before-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-after-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-start-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-end-color">#444444</xsl:attribute>
+  </xsl:attribute-set>
+
+  <!-- Side-specific frame attribute sets (used by generateTableEntryBorder) -->
+  <xsl:attribute-set name="__tableframe__top">
+    <xsl:attribute name="border-before-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-top-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-before-style">solid</xsl:attribute>
+    <xsl:attribute name="border-top-style">solid</xsl:attribute>
+  </xsl:attribute-set>
+  <xsl:attribute-set name="__tableframe__bottom">
+    <xsl:attribute name="border-after-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-bottom-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-after-style">solid</xsl:attribute>
+    <xsl:attribute name="border-bottom-style">solid</xsl:attribute>
+  </xsl:attribute-set>
+  <xsl:attribute-set name="__tableframe__left">
+    <xsl:attribute name="border-start-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-left-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-start-style">solid</xsl:attribute>
+    <xsl:attribute name="border-left-style">solid</xsl:attribute>
+  </xsl:attribute-set>
+  <xsl:attribute-set name="__tableframe__right">
+    <xsl:attribute name="border-end-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-right-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-end-style">solid</xsl:attribute>
+    <xsl:attribute name="border-right-style">solid</xsl:attribute>
+  </xsl:attribute-set>
+
+  <xsl:attribute-set name="thead__tableframe__bottom">
+    <xsl:attribute name="border-after-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-bottom-color">#444444</xsl:attribute>
+    <xsl:attribute name="border-after-style">solid</xsl:attribute>
+    <xsl:attribute name="border-after-width">1pt</xsl:attribute>
+  </xsl:attribute-set>
+
+  <!-- Darkly Themed Table Overrides -->
+  <xsl:attribute-set name="__table__primary">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-table-primary-bg"/></xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-table-primary-color"/></xsl:attribute>
+  </xsl:attribute-set>
+
+  <xsl:attribute-set name="__table__secondary">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-table-secondary-bg"/></xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-table-secondary-color"/></xsl:attribute>
+  </xsl:attribute-set>
+
+  <xsl:attribute-set name="__table__success">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-table-success-bg"/></xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-table-success-color"/></xsl:attribute>
+  </xsl:attribute-set>
+
+  <xsl:attribute-set name="__table__info">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-table-info-bg"/></xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-table-info-color"/></xsl:attribute>
+  </xsl:attribute-set>
+
+  <xsl:attribute-set name="__table__warning">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-table-warning-bg"/></xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-table-warning-color"/></xsl:attribute>
+  </xsl:attribute-set>
+
+  <xsl:attribute-set name="__table__danger">
+    <xsl:attribute name="background-color"><xsl:value-of select="$bootstrap-table-danger-bg"/></xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of select="$bootstrap-table-danger-color"/></xsl:attribute>
+  </xsl:attribute-set>
+
 </xsl:stylesheet>

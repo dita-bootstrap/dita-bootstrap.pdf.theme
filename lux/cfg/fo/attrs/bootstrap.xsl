@@ -21,8 +21,8 @@
   <xsl:variable name="bootstrap-btn-primary-color">#fff</xsl:variable>
   <xsl:variable name="bootstrap-primary-subtle">#d1d1d1</xsl:variable>
   <xsl:variable name="bootstrap-primary-subtle-text">#0a0a0a</xsl:variable>
-  <xsl:variable name="bootstrap-table-primary-bg">#d1d1d1</xsl:variable>
-  <xsl:variable name="bootstrap-table-primary-color">#55595c</xsl:variable>
+  <xsl:variable name="bootstrap-table-primary-bg">#dddddd</xsl:variable>
+  <xsl:variable name="bootstrap-table-primary-color">#111111</xsl:variable>
 
   <!-- Secondary -->
   <xsl:variable name="bootstrap-secondary">#ffffff</xsl:variable>
@@ -32,8 +32,8 @@
   <xsl:variable name="bootstrap-btn-secondary-color">#000</xsl:variable>
   <xsl:variable name="bootstrap-secondary-subtle">#ffffff</xsl:variable>
   <xsl:variable name="bootstrap-secondary-subtle-text">#666666</xsl:variable>
-  <xsl:variable name="bootstrap-table-secondary-bg">white</xsl:variable>
-  <xsl:variable name="bootstrap-table-secondary-color">#55595c</xsl:variable>
+  <xsl:variable name="bootstrap-table-secondary-bg">#ffffff</xsl:variable>
+  <xsl:variable name="bootstrap-table-secondary-color">#737373</xsl:variable>
 
   <!-- Success -->
   <xsl:variable name="bootstrap-success">#4bbf73</xsl:variable>
@@ -43,8 +43,8 @@
   <xsl:variable name="bootstrap-btn-success-color">#fff</xsl:variable>
   <xsl:variable name="bootstrap-success-subtle">#dbf2e3</xsl:variable>
   <xsl:variable name="bootstrap-success-subtle-text">#1e4c2e</xsl:variable>
-  <xsl:variable name="bootstrap-table-success-bg">#dbf2e3</xsl:variable>
-  <xsl:variable name="bootstrap-table-success-color">#55595c</xsl:variable>
+  <xsl:variable name="bootstrap-table-success-bg">#e4f5ea</xsl:variable>
+  <xsl:variable name="bootstrap-table-success-color">#317c4b</xsl:variable>
 
   <!-- Info -->
   <xsl:variable name="bootstrap-info">#1f9bcf</xsl:variable>
@@ -54,8 +54,8 @@
   <xsl:variable name="bootstrap-btn-info-color">#fff</xsl:variable>
   <xsl:variable name="bootstrap-info-subtle">#d2ebf5</xsl:variable>
   <xsl:variable name="bootstrap-info-subtle-text">#0c3e53</xsl:variable>
-  <xsl:variable name="bootstrap-table-info-bg">#d2ebf5</xsl:variable>
-  <xsl:variable name="bootstrap-table-info-color">#55595c</xsl:variable>
+  <xsl:variable name="bootstrap-table-info-bg">#ddf0f8</xsl:variable>
+  <xsl:variable name="bootstrap-table-info-color">#146587</xsl:variable>
 
   <!-- Warning -->
   <xsl:variable name="bootstrap-warning">#f0ad4e</xsl:variable>
@@ -65,8 +65,8 @@
   <xsl:variable name="bootstrap-btn-warning-color">#fff</xsl:variable>
   <xsl:variable name="bootstrap-warning-subtle">#fcefdc</xsl:variable>
   <xsl:variable name="bootstrap-warning-subtle-text">#60451f</xsl:variable>
-  <xsl:variable name="bootstrap-table-warning-bg">#fcefdc</xsl:variable>
-  <xsl:variable name="bootstrap-table-warning-color">#55595c</xsl:variable>
+  <xsl:variable name="bootstrap-table-warning-bg">#fdf3e4</xsl:variable>
+  <xsl:variable name="bootstrap-table-warning-color">#8e662f</xsl:variable>
 
   <!-- Danger -->
   <xsl:variable name="bootstrap-danger">#d9534f</xsl:variable>
@@ -76,8 +76,8 @@
   <xsl:variable name="bootstrap-btn-danger-color">#fff</xsl:variable>
   <xsl:variable name="bootstrap-danger-subtle">#f7dddc</xsl:variable>
   <xsl:variable name="bootstrap-danger-subtle-text">#572120</xsl:variable>
-  <xsl:variable name="bootstrap-table-danger-bg">#f7dddc</xsl:variable>
-  <xsl:variable name="bootstrap-table-danger-color">#55595c</xsl:variable>
+  <xsl:variable name="bootstrap-table-danger-bg">#f9e5e5</xsl:variable>
+  <xsl:variable name="bootstrap-table-danger-color">#8d3633</xsl:variable>
 
   <!-- Light -->
   <xsl:variable name="bootstrap-light">#f0f1f2</xsl:variable>
@@ -105,6 +105,8 @@
   <xsl:variable name="bootstrap-border-color">#e0e1e2</xsl:variable>
   <xsl:variable name="bootstrap-rounded">0</xsl:variable>
 
+  <xsl:variable name="bootstrap-heading-color">#1a1a1a</xsl:variable>
+  <xsl:variable name="bootstrap-heading-font-weight">600</xsl:variable>
   <!-- Heading Font Sizes -->
   <xsl:variable name="bootstrap-h1-font-size">24pt</xsl:variable>
   <xsl:variable name="bootstrap-h2-font-size">21pt</xsl:variable>
@@ -119,4 +121,11 @@
   <!-- Code colors -->
   <xsl:variable name="bootstrap-code-color">#c92235</xsl:variable>
   <xsl:variable name="bootstrap-dita-violet">#6f42c1</xsl:variable>
+
+  <xsl:variable name="bootstrap-primary-border">#1a1a1a</xsl:variable>
+  <xsl:variable name="bootstrap-secondary-border">#55595c</xsl:variable>
+  <xsl:variable name="bootstrap-success-border">#4bbf73</xsl:variable>
+  <xsl:variable name="bootstrap-danger-border">#d9534f</xsl:variable>
+  <xsl:variable name="bootstrap-warning-border">#f0ad4e</xsl:variable>
+  <xsl:variable name="bootstrap-info-border">#1f9bcf</xsl:variable>
 </xsl:stylesheet>

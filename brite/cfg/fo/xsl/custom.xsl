@@ -34,44 +34,87 @@
     <xsl:param name="theme" select="''"/>
     <xsl:param name="prefix" select="''"/>
     <xsl:param name="defaultRounded" select="false()"/>
-    <xsl:attribute name="border-style">solid</xsl:attribute>
-    <xsl:attribute name="border-color">#000000</xsl:attribute>
-    <xsl:attribute name="border-bottom-width">4.25pt</xsl:attribute>
-    <xsl:attribute name="border-right-width">4.25pt</xsl:attribute>
-    <!-- Neo-Brutalist Hard Shadow Simulation via Thick Black Borders (3px offset) -->
-    <!-- 2pt base + 2.25pt (3px) = 4.25pt -->
     <xsl:next-match>
-      <xsl:with-param name="variant" select="$variant"/>
+      <xsl:with-param name="variant" select="if (contains(@class, ' topic/pre ')) then $variant else ''"/>
       <xsl:with-param name="theme" select="$theme"/>
       <xsl:with-param name="prefix" select="$prefix"/>
       <xsl:with-param name="defaultRounded" select="$defaultRounded"/>
     </xsl:next-match>
+    <xsl:attribute name="border-style">solid</xsl:attribute>
+    <xsl:attribute name="border-color">#000000</xsl:attribute>
+    <xsl:attribute name="border-width"><xsl:value-of select="$bootstrap-border-width"/></xsl:attribute>
+    <xsl:attribute name="border-bottom-width">4.25pt</xsl:attribute>
+    <xsl:attribute name="border-right-width">4.25pt</xsl:attribute>
   </xsl:template>
 
-  <!-- Brite Theme: Suppress @outline for buttons - Always render as solid buttons -->
+  <!-- Brite buttons: black border with hard shadow; outline renders as filled -->
   <xsl:template
-    match="*[contains(@class, ' bootstrap-d/button ') or exists(tokenize(@outputclass, ' ')[starts-with(., 'btn-')])]"
-    mode="bootstrapDecoration"
-    priority="20"
+    match="*[contains(@class, ' bootstrap-d/button ') or (exists(tokenize(@outputclass, ' ')[starts-with(., 'btn')]) and (contains(@class, ' topic/xref ') or contains(@class, ' topic/ph ')))]"
+    priority="25"
   >
-    <xsl:variable name="token" select="tokenize(@outputclass, ' ')[starts-with(., 'btn-')][1]"/>
-    <xsl:variable name="theme">
-      <xsl:choose>
-        <xsl:when test="@color"><xsl:value-of select="@color"/></xsl:when>
-        <xsl:when test="starts-with($token, 'btn-outline-')">
-          <xsl:value-of select="substring-after($token, 'btn-outline-')"/>
-        </xsl:when>
-        <xsl:when test="starts-with($token, 'btn-')">
-          <xsl:value-of select="substring-after($token, 'btn-')"/>
-        </xsl:when>
-        <xsl:otherwise>primary</xsl:otherwise>
-      </xsl:choose>
+    <xsl:variable
+      name="base"
+      select="(@color, replace(tokenize(@outputclass, ' ')[starts-with(., 'btn-') and not(. = ('btn-lg', 'btn-sm', 'btn-toolbar', 'btn-group', 'btn-outline'))][1], '^btn-(outline-)?', ''), 'primary')[. != ''][1]"
+    />
+    <xsl:variable name="result">
+      <xsl:next-match/>
     </xsl:variable>
-    <xsl:call-template name="processBootstrapAttrSetReflection">
-      <xsl:with-param name="attrSet" select="concat('__btn__', $theme)"/>
-    </xsl:call-template>
-    <!-- Chain to the base Brite decorator for shadows -->
-    <xsl:next-match/>
+    <xsl:apply-templates select="$result" mode="brite-button">
+      <xsl:with-param name="base" select="$base"/>
+    </xsl:apply-templates>
+  </xsl:template>
+
+  <xsl:template match="@*|node()" mode="brite-button">
+    <xsl:param name="base"/>
+    <xsl:copy>
+      <xsl:apply-templates select="@*|node()" mode="brite-button">
+        <xsl:with-param name="base" select="$base"/>
+      </xsl:apply-templates>
+    </xsl:copy>
+  </xsl:template>
+
+  <xsl:template
+    match="*[self::fo:inline or self::fo:block][@border-style = ('solid', 'none')][@padding]"
+    mode="brite-button"
+  >
+    <xsl:param name="base"/>
+    <xsl:copy>
+      <xsl:apply-templates select="@*" mode="brite-button"/>
+      <xsl:attribute name="background-color">
+        <xsl:call-template name="getBootstrapSetting">
+          <xsl:with-param name="name" select="concat('bootstrap-btn-', $base, '-bg')"/>
+        </xsl:call-template>
+      </xsl:attribute>
+      <xsl:attribute name="color">
+        <xsl:call-template name="getBootstrapSetting">
+          <xsl:with-param name="name" select="concat('bootstrap-btn-', $base, '-color')"/>
+        </xsl:call-template>
+      </xsl:attribute>
+      <xsl:attribute name="border-style">solid</xsl:attribute>
+      <xsl:attribute name="border-color">#000000</xsl:attribute>
+      <xsl:attribute name="border-width"><xsl:value-of select="$bootstrap-border-width"/></xsl:attribute>
+      <xsl:attribute name="border-bottom-width">4.25pt</xsl:attribute>
+      <xsl:attribute name="border-right-width">4.25pt</xsl:attribute>
+      <xsl:apply-templates select="node()" mode="brite-button"/>
+    </xsl:copy>
+  </xsl:template>
+
+  <xsl:template
+    match="*[contains(@class, ' bootstrap-d/badge ') or (contains(@class, ' topic/ph ') and contains(@outputclass, 'badge'))]"
+    priority="25"
+  >
+    <xsl:variable name="result">
+      <xsl:next-match/>
+    </xsl:variable>
+    <xsl:for-each select="$result/fo:inline">
+      <xsl:copy>
+        <xsl:copy-of select="@* except (@border-style | @border-color | @border-width)"/>
+        <xsl:attribute name="border-style">solid</xsl:attribute>
+        <xsl:attribute name="border-color">#000000</xsl:attribute>
+        <xsl:attribute name="border-width">1pt</xsl:attribute>
+        <xsl:copy-of select="node()"/>
+      </xsl:copy>
+    </xsl:for-each>
   </xsl:template>
 
 </xsl:stylesheet>

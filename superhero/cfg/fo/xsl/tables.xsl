@@ -8,6 +8,26 @@
   version="2.0"
 >
 
+  <!-- Table Header Row Styling - SUPERHERO OVERRIDE -->
+  <xsl:template match="*[contains(@class, ' topic/thead ')]/*[contains(@class, ' topic/row ')]" priority="10">
+    <fo:table-row xsl:use-attribute-sets="thead.row">
+      <xsl:call-template name="commonattributes"/>
+
+      <xsl:variable
+        name="theme"
+        select="(@color, parent::*/@color, ancestor::*[contains(@class, ' topic/table ')][1]/@color)[1]"
+      />
+
+      <xsl:if test="$theme">
+        <xsl:call-template name="processBootstrapAttrSetReflection">
+          <xsl:with-param name="attrSet" select="concat('__table__', $theme)"/>
+        </xsl:call-template>
+      </xsl:if>
+
+      <xsl:apply-templates/>
+    </fo:table-row>
+  </xsl:template>
+
   <!-- Table Body Row Styling - SUPERHERO SUBTLE OVERRIDE -->
   <xsl:template match="*[contains(@class, ' topic/tbody ')]/*[contains(@class, ' topic/row ')]" priority="10">
     <fo:table-row xsl:use-attribute-sets="tbody.row">
@@ -25,7 +45,7 @@
         <!-- Row-specific color always wins - SUPERHERO: USE SUBTLE -->
         <xsl:when test="$rowTheme">
           <xsl:call-template name="processBootstrapAttrSetReflection">
-            <xsl:with-param name="attrSet" select="concat('__bg__', $rowTheme, '-subtle')"/>
+            <xsl:with-param name="attrSet" select="concat('__table__', $rowTheme)"/>
           </xsl:call-template>
         </xsl:when>
         <!-- Table-level color or row-striping -->
@@ -33,7 +53,7 @@
           <xsl:choose>
             <xsl:when test="$tableTheme">
               <xsl:call-template name="processBootstrapAttrSetReflection">
-                <xsl:with-param name="attrSet" select="concat('__bg__', $tableTheme, '-subtle')"/>
+                <xsl:with-param name="attrSet" select="concat('__table__', $tableTheme)"/>
               </xsl:call-template>
             </xsl:when>
             <xsl:when test="$striped">
@@ -132,14 +152,14 @@
       <xsl:choose>
         <xsl:when test="@color">
            <xsl:call-template name="processBootstrapAttrSetReflection">
-             <xsl:with-param name="attrSet" select="concat('__bg__', @color, '-subtle')"/>
+             <xsl:with-param name="attrSet" select="concat('__table__', @color)"/>
            </xsl:call-template>
         </xsl:when>
         <xsl:when test="$isColoredCol">
            <xsl:choose>
             <xsl:when test="$tableTheme">
               <xsl:call-template name="processBootstrapAttrSetReflection">
-                <xsl:with-param name="attrSet" select="concat('__bg__', $tableTheme, '-subtle')"/>
+                <xsl:with-param name="attrSet" select="concat('__table__', $tableTheme)"/>
               </xsl:call-template>
             </xsl:when>
             <xsl:otherwise>

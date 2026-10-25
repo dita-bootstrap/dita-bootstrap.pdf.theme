@@ -20,4 +20,21 @@
       <xsl:with-param name="defaultRounded" select="$defaultRounded"/>
     </xsl:next-match>
   </xsl:template>
+
+  <xsl:template
+    match="*[contains(@class, ' topic/note ') or contains(@class, ' bootstrap-d/alert ') or exists(tokenize(@outputclass, ' ')[starts-with(., 'alert-')])]"
+    mode="bootstrapDecoration"
+    priority="30"
+  >
+    <xsl:param name="variant" select="''"/>
+    <xsl:param name="theme" select="''"/>
+    <xsl:param name="prefix" select="''"/>
+    <xsl:param name="defaultRounded" select="false()"/>
+    <xsl:next-match>
+      <xsl:with-param name="variant" select="''"/>
+      <xsl:with-param name="theme" select="$theme"/>
+      <xsl:with-param name="prefix" select="$prefix"/>
+      <xsl:with-param name="defaultRounded" select="$defaultRounded"/>
+    </xsl:next-match>
+  </xsl:template>
 </xsl:stylesheet>
