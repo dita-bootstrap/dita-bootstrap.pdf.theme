@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	This file is part of the DITA Bootstrap PDF Themes plug-in for DITA Open Toolkit.
+	See the accompanying LICENSE file for applicable licenses.
+-->
 <xsl:stylesheet
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -6,16 +10,18 @@
 >
 
   <!-- PrismJS code block styling aligned with Cerulean variables -->
-  <xsl:variable name="prismjs.text.color">#5d5e60</xsl:variable>
-  <xsl:variable name="prismjs.background.color"><xsl:value-of select="$bootstrap-secondary-subtle"/></xsl:variable>
-  <xsl:variable name="prismjs.comment.color">#adb5bd</xsl:variable>
-  <xsl:variable name="prismjs.punctuation.color">#5a6167</xsl:variable>
-  <xsl:variable name="prismjs.string.color">#679733</xsl:variable>
-  <xsl:variable name="prismjs.function.color">#d05c00</xsl:variable>
-  <xsl:variable name="prismjs.name.color">#1a71a1</xsl:variable>
-  <xsl:variable name="prismjs.tag.color">#c71c22</xsl:variable>
-  <xsl:variable name="prismjs.url.color">#033c73</xsl:variable>
-  <xsl:variable name="prismjs.keyword.color">#19aa80</xsl:variable>
+  <xsl:variable name="prismjs.text.color">#495057</xsl:variable>
+  <xsl:variable name="prismjs.comment.color">#797f84</xsl:variable>
+  <xsl:variable name="prismjs.punctuation.color">#797f84</xsl:variable>
+  <xsl:variable name="prismjs.namespace.color">#797f84</xsl:variable>
+  <xsl:variable name="prismjs.tag.color">#a22b62</xsl:variable>
+  <xsl:variable name="prismjs.string.color">#507628</xsl:variable>
+  <xsl:variable name="prismjs.keyword.color">#022a50</xsl:variable>
+  <xsl:variable name="prismjs.type.color">#8b1418</xsl:variable>
+  <xsl:variable name="prismjs.regex.color">#b1580e</xsl:variable>
+  <xsl:variable name="prismjs.deleted.color">#8b1418</xsl:variable>
+  <xsl:variable name="prismjs.url.color">#6c2a00</xsl:variable>
 
   <xsl:variable name="prismjs.font-weight">normal</xsl:variable>
+
 </xsl:stylesheet>

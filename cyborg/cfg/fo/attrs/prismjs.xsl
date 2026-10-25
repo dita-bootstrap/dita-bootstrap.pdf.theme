@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	This file is part of the DITA Bootstrap PDF Themes plug-in for DITA Open Toolkit.
+	See the accompanying LICENSE file for applicable licenses.
+-->
 <xsl:stylesheet
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -6,17 +10,21 @@
 >
 
   <!-- PrismJS code block styling aligned with Cyborg variables -->
-  <xsl:variable name="prismjs.text.color">#ffffff</xsl:variable>
-  <xsl:variable name="prismjs.background.color">#222222</xsl:variable>
-  <xsl:variable name="prismjs.comment.color">#888</xsl:variable>
-  <xsl:variable name="prismjs.punctuation.color">#ced4da</xsl:variable>
-  <xsl:variable name="prismjs.string.color">#92d928</xsl:variable>
-  <xsl:variable name="prismjs.function.color">#e69e3e</xsl:variable>
-  <xsl:variable name="prismjs.name.color">#52b8e8</xsl:variable>
-  <xsl:variable name="prismjs.tag.color">#e66060</xsl:variable>
-  <xsl:variable name="prismjs.url.color">#c192db</xsl:variable>
-  <xsl:variable name="prismjs.keyword.color">#6ed1b4</xsl:variable>
-  <xsl:variable name="prismjs.border.width">0pt</xsl:variable>
+  <xsl:variable name="prismjs.text.color">#212529</xsl:variable>
+  <xsl:variable name="prismjs.comment.color">#6c757d</xsl:variable>
+  <xsl:variable name="prismjs.punctuation.color">#6c757d</xsl:variable>
+  <xsl:variable name="prismjs.namespace.color">#6c757d</xsl:variable>
+  <xsl:variable name="prismjs.tag.color">#9d4d2a</xsl:variable>
+  <xsl:variable name="prismjs.string.color">#537d00</xsl:variable>
+  <xsl:variable name="prismjs.keyword.color">#2079a3</xsl:variable>
+  <xsl:variable name="prismjs.type.color">#cc0000</xsl:variable>
+  <xsl:variable name="prismjs.regex.color">#ab5b00</xsl:variable>
+  <xsl:variable name="prismjs.deleted.color">#cc0000</xsl:variable>
+  <xsl:variable name="prismjs.url.color">#ab5b00</xsl:variable>
 
+  <xsl:variable name="prismjs.background.color">#f8f9fa</xsl:variable>
+  <xsl:variable name="prismjs.border.color">#dee2e6</xsl:variable>
+  <xsl:variable name="prismjs.card.background.color">#f8f9fa</xsl:variable>
   <xsl:variable name="prismjs.font-weight">normal</xsl:variable>
+
 </xsl:stylesheet>
