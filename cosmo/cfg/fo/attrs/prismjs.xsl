@@ -17,4 +17,5 @@
   <xsl:variable name="prismjs.url.color">#6b3b83</xsl:variable>
   <xsl:variable name="prismjs.keyword.color">#189474</xsl:variable>
 
+  <xsl:variable name="prismjs.font-weight">normal</xsl:variable>
 </xsl:stylesheet>

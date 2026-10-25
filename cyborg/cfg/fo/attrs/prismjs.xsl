@@ -18,4 +18,5 @@
   <xsl:variable name="prismjs.keyword.color">#6ed1b4</xsl:variable>
   <xsl:variable name="prismjs.border.width">0pt</xsl:variable>
 
+  <xsl:variable name="prismjs.font-weight">normal</xsl:variable>
 </xsl:stylesheet>
