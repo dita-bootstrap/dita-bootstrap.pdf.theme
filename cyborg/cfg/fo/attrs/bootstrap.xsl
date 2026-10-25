@@ -80,7 +80,7 @@
   <xsl:variable name="bootstrap-table-danger-color">#e68080</xsl:variable>
 
   <!-- Light -->
-  <xsl:variable name="bootstrap-light">#f8f9fa</xsl:variable>
+  <xsl:variable name="bootstrap-light">#222222</xsl:variable>
   <xsl:variable name="bootstrap-badge-light-bg" select="$bootstrap-light"/>
   <xsl:variable name="bootstrap-badge-light-color">#fff</xsl:variable>
   <xsl:variable name="bootstrap-btn-light-bg">#222</xsl:variable>
@@ -91,7 +91,7 @@
   <xsl:variable name="bootstrap-table-light-color">#fff</xsl:variable>
 
   <!-- Dark -->
-  <xsl:variable name="bootstrap-dark">#222222</xsl:variable>
+  <xsl:variable name="bootstrap-dark">#adafae</xsl:variable>
   <xsl:variable name="bootstrap-badge-dark-bg" select="$bootstrap-dark"/>
   <xsl:variable name="bootstrap-badge-dark-color">#000</xsl:variable>
   <xsl:variable name="bootstrap-btn-dark-bg">#adafae</xsl:variable>
